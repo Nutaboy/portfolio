@@ -22,19 +22,20 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: CEO
-    company: GenCoin
-    company_url: ''
+  - title: Cloud Engineer / IT-Manager
+    company: Amanox Solutions AG
+    company_url: 'https://www.amanox.ch'
     company_logo: org-gc
-    location: California
-    date_start: '2021-01-01'
-    date_end: ''
+    location: Switzerland
+    date_start: '2013-06-01'
+    date_end: '2014-07-01'
     description: |2-
         Responsibilities include:
         
-        * Analysing
-        * Modelling
-        * Deploying
+        * Creation of concepts & architecture
+        * technical implementation
+        * trainings of groups
+        * Budget responsibility
         
   - title: Professor of Semiconductor Physics
     company: University X
@@ -44,6 +45,21 @@ experience:
     date_start: '2016-01-01'
     date_end: '2020-12-31'
     description: Taught electronic engineering and researched semiconductor physics.
+
+      - title: Leutnant
+    company: Swiss Army
+    company_url: 'https://www.vtg.admin.ch'
+    company_logo: org-gc
+    location: Switzerland
+    date_start: '2013-06-01'
+    date_end: '2014-07-01'
+    description: |2-
+        Responsibilities include:
+        
+        * Training
+        * Leadership of 50 people
+        * Planing
+
 
 design:
   columns: '2'
