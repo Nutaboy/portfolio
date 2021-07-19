@@ -29,7 +29,7 @@ experience:
     location: Switzerland
     date_start: '2013-06-01'
     date_end: '2014-07-01'
-    description: |2-
+    description: >-
         Responsibilities include:
         
         * Creation of concepts & architecture
@@ -53,7 +53,7 @@ experience:
     location: Switzerland
     date_start: '2013-06-01'
     date_end: '2014-07-01'
-    description: |2-
+    description: >-
         Responsibilities include:
         
         * Training
