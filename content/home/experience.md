@@ -26,9 +26,9 @@ experience:
     company: Amanox Solutions AG
     company_url: 'https://www.amanox.ch'
     company_logo: org-gc
-    location: Switzerland
-    date_start: '2013-06-01'
-    date_end: '2014-07-01'
+    location: Bern
+    date_start: '2018-06-01'
+    date_end: 'Today'
     description: >-
         Responsibilities include:
         
@@ -37,16 +37,34 @@ experience:
         * trainings of groups
         * Budget responsibility
         
-  - title: Professor of Semiconductor Physics
-    company: University X
+  - title: Junior System Engineer
+    company: Regio Energie Solothurn
     company_url: ''
     company_logo: org-x
-    location: California
+    location: Solothurn
     date_start: '2016-01-01'
     date_end: '2020-12-31'
     description: Taught electronic engineering and researched semiconductor physics.
 
-  - title: Leutnant
+  - title: System Technician
+    company: Datimo
+    company_url: 'https://www.datimo.ch'
+    company_logo: org-x
+    location: Brugg
+    date_start: '2016-01-01'
+    date_end: '2020-12-31'
+    description: Taught electronic engineering and researched semiconductor physics.
+
+  - title: Salesman
+    company: MediaMarkt
+    company_url: 'https://www.mediamarkt.ch/'
+    company_logo: org-x
+    location: Oftringen
+    date_start: '2016-01-01'
+    date_end: '2020-12-31'
+    description: Taught electronic engineering and researched semiconductor physics.
+
+  - title: Lieutenant
     company: Swiss Army
     company_url: 'https://www.vtg.admin.ch'
     company_logo: org-gc
@@ -60,6 +78,14 @@ experience:
         * Leadership of 50 people
         * Planing
 
+  - title: Apprentice
+    company: Regio Energie Solothurn
+    company_url: 'https://www.regioenergie.ch'
+    company_logo: org-x
+    location: Solothurn
+    date_start: '2016-01-01'
+    date_end: '2020-12-31'
+    description: Taught electronic engineering and researched semiconductor physics.
 
 design:
   columns: '2'
