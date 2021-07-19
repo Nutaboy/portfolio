@@ -28,8 +28,8 @@ experience:
     company_logo: org-gc
     location: 'Bern'
     date_start: '2018-06-01'
-    date_end: 'Today'
-    description: >-
+    date_end: ''
+    description: |2-
         Responsibilities include:
         
         * Creation of concepts & architecture
@@ -71,7 +71,7 @@ experience:
     location: 'Switzerland'
     date_start: '2013-06-01'
     date_end: '2014-07-01'
-    description: >-
+    description: |2-
         Responsibilities include:
         
         * Training
