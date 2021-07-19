@@ -46,7 +46,7 @@ experience:
     date_end: '2020-12-31'
     description: Taught electronic engineering and researched semiconductor physics.
 
-      - title: Leutnant
+  - title: Leutnant
     company: Swiss Army
     company_url: 'https://www.vtg.admin.ch'
     company_logo: org-gc
