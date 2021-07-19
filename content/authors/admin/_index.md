@@ -1,6 +1,6 @@
 ---
 role: Cloud Engineer
-avatar_filename: me.png
+avatar_filename: https://www.gravatar.com/avatar/1a32b4e8c526b48a93433a6ff692d809
 bio: My research interests include AWS, IaC and HybridCloud.
 interests:
   - AWS
@@ -12,10 +12,7 @@ social:
     link: /#contact
   - icon: twitter
     icon_pack: fab
-    link: https://twitter.com/GeorgeCushen
-  - icon: graduation-cap
-    icon_pack: fas
-    link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+    link: https://twitter.com/nutaboy
   - icon: github
     icon_pack: fab
     link: https://github.com/nutaboy
