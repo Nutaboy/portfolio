@@ -22,11 +22,11 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: Cloud Engineer / IT-Manager
-    company: Amanox Solutions AG
+  - title: 'Cloud Engineer / IT-Manager'
+    company: 'Amanox Solutions AG'
     company_url: 'https://www.amanox.ch'
     company_logo: org-gc
-    location: Bern
+    location: 'Bern'
     date_start: '2018-06-01'
     date_end: 'Today'
     description: >-
@@ -37,38 +37,38 @@ experience:
         * trainings of groups
         * Budget responsibility
         
-  - title: Junior System Engineer
-    company: Regio Energie Solothurn
+  - title: 'Junior System Engineer'
+    company: 'Regio Energie Solothurn'
     company_url: ''
     company_logo: org-x
-    location: Solothurn
+    location: 'Solothurn'
     date_start: '2016-01-01'
     date_end: '2020-12-31'
-    description: Taught electronic engineering and researched semiconductor physics.
+    description: 'Taught electronic engineering and researched semiconductor physics.'
 
-  - title: System Technician
-    company: Datimo
+  - title: 'System Technician'
+    company: 'Datimo'
     company_url: 'https://www.datimo.ch'
     company_logo: org-x
-    location: Brugg
+    location: 'Brugg'
     date_start: '2016-01-01'
     date_end: '2020-12-31'
-    description: Taught electronic engineering and researched semiconductor physics.
+    description: 'Taught electronic engineering and researched semiconductor physics.'
 
-  - title: Salesman
-    company: MediaMarkt
+  - title: 'Salesman'
+    company: 'MediaMarkt'
     company_url: 'https://www.mediamarkt.ch/'
     company_logo: org-x
-    location: Oftringen
+    location: 'Oftringen'
     date_start: '2016-01-01'
     date_end: '2020-12-31'
-    description: Taught electronic engineering and researched semiconductor physics.
+    description: 'Taught electronic engineering and researched semiconductor physics.'
 
-  - title: Lieutenant
-    company: Swiss Army
+  - title: 'Lieutenant'
+    company: 'Swiss Army'
     company_url: 'https://www.vtg.admin.ch'
     company_logo: org-gc
-    location: Switzerland
+    location: 'Switzerland'
     date_start: '2013-06-01'
     date_end: '2014-07-01'
     description: >-
@@ -78,14 +78,14 @@ experience:
         * Leadership of 50 people
         * Planing
 
-  - title: Apprentice
-    company: Regio Energie Solothurn
+  - title: 'Apprentice'
+    company: 'Regio Energie Solothurn'
     company_url: 'https://www.regioenergie.ch'
     company_logo: org-x
-    location: Solothurn
+    location: 'Solothurn'
     date_start: '2016-01-01'
     date_end: '2020-12-31'
-    description: Taught electronic engineering and researched semiconductor physics.
+    description: 'Taught electronic engineering and researched semiconductor physics.'
 
 design:
   columns: '2'
