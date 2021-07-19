@@ -23,8 +23,8 @@ social:
     icon_pack: fab
     link: https://www.linkedin.com/in/fabian-brunner-699284133/
 organizations:
-  - name: Stanford University
-    url: https://www.stanford.edu/
+  - name: Amanox Solutions AG
+    url: https://www.amanox.ch
 education:
   courses:
     - course: "BSc in Computer Science "
