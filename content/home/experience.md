@@ -40,7 +40,7 @@ experience:
   - title: 'Junior System Engineer'
     company: 'Regio Energie Solothurn'
     company_url: ''
-    company_logo: org-x
+    company_logo: org-regio
     location: 'Solothurn'
     date_start: '2016-01-01'
     date_end: '2020-12-31'
@@ -58,7 +58,7 @@ experience:
   - title: 'Salesman'
     company: 'MediaMarkt'
     company_url: 'https://www.mediamarkt.ch/'
-    company_logo: org-x
+    company_logo: org-media
     location: 'Oftringen'
     date_start: '2016-01-01'
     date_end: '2020-12-31'
@@ -67,7 +67,7 @@ experience:
   - title: 'Lieutenant'
     company: 'Swiss Army'
     company_url: 'https://www.vtg.admin.ch'
-    company_logo: org-gc
+    company_logo: org-army
     location: 'Switzerland'
     date_start: '2013-06-01'
     date_end: '2014-07-01'
@@ -81,7 +81,7 @@ experience:
   - title: 'Apprentice'
     company: 'Regio Energie Solothurn'
     company_url: 'https://www.regioenergie.ch'
-    company_logo: org-x
+    company_logo: org-regio
     location: 'Solothurn'
     date_start: '2016-01-01'
     date_end: '2020-12-31'
