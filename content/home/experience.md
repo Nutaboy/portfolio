@@ -25,7 +25,7 @@ experience:
   - title: 'Cloud Engineer / IT-Manager'
     company: 'Amanox Solutions AG'
     company_url: 'https://www.amanox.ch'
-    company_logo: org-gc
+    company_logo: org-amanox
     location: 'Bern'
     date_start: '2018-06-01'
     date_end: ''
@@ -39,7 +39,7 @@ experience:
         
   - title: 'Junior System Engineer'
     company: 'Regio Energie Solothurn'
-    company_url: ''
+    company_url: 'https://www.regioenergie.ch'
     company_logo: org-regio
     location: 'Solothurn'
     date_start: '2016-01-01'
