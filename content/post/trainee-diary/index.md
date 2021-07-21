@@ -43,7 +43,7 @@ Welcome to the team I wish you a great start and time at our company ❤️
 In this post I will guide you on the setup of your trainee diary. 
 In a later post I will share with you a guide and my expectations.
 If you have any questions or you are stuck at something just get in touch with me.
-These blogpost should guide you through the first day. 
+Looking forward to work with you.
 
 1. Requirements
 2. Installation
@@ -53,7 +53,11 @@ These blogpost should guide you through the first day.
 
 ## Requirements
 Befor you start make sure you fullfill all the requirements to start this guide otherwise it can cause problems.
+<input type="checkbox"> [Create a Github account](https://www.github.com/join)
 <input type="checkbox"> Install a Packet Manager
+
+
+
 ## Installation
 
 ## Setup your CV
