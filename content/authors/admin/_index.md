@@ -36,7 +36,7 @@ education:
 superuser: true
 highlight_name: false
 title: Fabian Brunner
-email: ""
+email: "fabian.brunner@windowslive.com"
 ---
 Fabian Brunner is a Cloud Engineer at Amanox Solutions in Switzerland. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
 
