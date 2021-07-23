@@ -14,13 +14,14 @@
   
   .skill-bar{
     height: 14px;
-    background: #f8f9fa;
+    background: light;
     border-radius: 3px;
+    box-shadow: 5 px 5px 8px gray;
   }
   
   .skill-per{
     height: 14px;
-    background: #1565c0;
+    background: primary;
     border-radius: 3px;
     position: relative;
     animation: fillBars 2.5s 1;
@@ -30,7 +31,7 @@
     content: attr(per);
     position: absolute;
     padding: 4px 6px;
-    background: #e00707;
+    background: primary;
     border-radius: 4px;
     font-size: 12px;
     top: -35px;
@@ -38,17 +39,6 @@
     transform: translateX(50%);
   }
   
-  .skill-per::after{
-    content: "";
-    position: absolute;
-    width: 0px;
-    height: 0px;
-    background: #08dd36;
-    top: -20px;
-    right: 0;
-    transform: translateX(50%) rotate(45deg);
-    border-radius: 2px;
-  }
   
   @keyframes fillBars{
     from{
