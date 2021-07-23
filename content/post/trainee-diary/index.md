@@ -54,7 +54,7 @@ Befor you start make sure you fullfill all the requirements to start this guide 
 <input type="checkbox"> Download a Packet Manager [For Windows](https://chocolatey.org) |[for Mac](https://www.brew.sh) 
 
 
-[If you need a place to store your private passwords](https://vault.bitwarden.com/#/register)
+<input type="checkbox"> [👉 Have something where you can store you passwords](https://vault.bitwarden.com/#/register)
 
 
 <input type="checkbox"> Have some portrait of you ready
@@ -78,7 +78,7 @@ Befor you start make sure you fullfill all the requirements to start this guide 
 So now that you have everything let's start.
 
 ## Installation of Chocolatey
-Go to your search and tipp in Windows Powershell and then open it as an Administrator.
+Go to your search and tipp in **Windows Powershell** and then open it as an Administrator.
 {{< figure src="1-choco.png" caption="Windows Search" numbered="true" >}}
 
 Then copy paste the following command into powershell.
@@ -143,9 +143,11 @@ Now let's get our hands dirty with git. Git is version control system and their 
 
 Log you into your Github account and check if there was a new repository created. 
 You should see something like <githubAccountNme/ogithubOrganizationName>/<repositoryname>
-{{< figure src="1-github" caption="Github Dashboard" numbered="true" >}}
+{{< figure src="1-github.png" caption="Github Dashboard" numbered="true" >}}
 
 Next you should open an command line tool on your pc.
+
+
 {{< icon name="apple" pack="fab" >}} On mac open the terminal and type in the following command:
 ```bash
 homebrew install git golang hugo
@@ -165,7 +167,7 @@ I recommend you to master the command line it is more convinient and indepentent
 
 
 Into your Github account navigate now into the newly created repository and copy the clone Link of the repository we will need it to create a local copy of the repository on your machine.
-{{< figure src="2-github" caption="Overview over your repository" numbered="true" >}}
+{{< figure src="2-github.png" caption="Overview over your repository" numbered="true" >}}
 
 Now you go back to your already open console.
 The following command are creating a simple folder structur in your user directory.
@@ -185,14 +187,14 @@ graph LR;
   amanox-->trainee diary;
 ```
 You can also choose a different structure if it fits your need better it is just a proposal.
-Congrats you also finished this part. 🙌
+Congrats you finished this part. 🙌
 ## Setup your CV
 Open now **visual Code** an click on "open Folder"
-{{< figure src="1-visualCode" caption="Start screen of visual Code" numbered="true" >}}
+{{< figure src="1-visualCode.png" caption="Start screen of visual Code" numbered="true" >}}
 
 
 Next you navigate to your Repository and open it.
-{{< figure src="2-visualCode" caption="Choose the root folder of your repository" numbered="true" >}}
+{{< figure src="2-visualCode.png" caption="Choose the root folder of your repository" numbered="true" >}}
 
 
 ## Write your first post
