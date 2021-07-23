@@ -51,28 +51,28 @@ Looking forward to work with you.
 Befor you start make sure you fullfill all the requirements to start this guide otherwise it can cause problems.
 
 
-<input type="checkbox"> Download a Packet Manager [For Windows](https://chocolatey.org) |[for Mac](https://www.brew.sh) 
+<input type="checkbox"> 👉 Download a Packet Manager [For Windows](https://chocolatey.org) |[for Mac](https://www.brew.sh) 
 
 
-<input type="checkbox"> [👉 Have something where you can store you passwords](https://vault.bitwarden.com/#/register)
+<input type="checkbox"> 👉  [Have something where you can store you passwords](https://vault.bitwarden.com/#/register)
 
 
-<input type="checkbox"> Have some portrait of you ready
+<input type="checkbox"> 👉 Have some portrait of you ready
 
 
-<input type="checkbox"> [Create a Github account](https://www.github.com/join)
+<input type="checkbox"> 👉 [Create a Github account](https://www.github.com/join)
 
 
-<input type="checkbox"> [Link your Github account with a Netlify account](https://app.netlify.com/signup) 
+<input type="checkbox"> 👉 [Link your Github account with a Netlify account](https://app.netlify.com/signup) 
 
 
-<input type="checkbox"> [Create a Gravatar/Wordpress account](https://en.gravatar.com) 
+<input type="checkbox"> 👉 [Create a Gravatar/Wordpress account](https://en.gravatar.com) 
 
 
-<input type="checkbox"> [Create a LinkedIn account](https://linkedin.com/signup) 
+<input type="checkbox"> 👉 [Create a LinkedIn account](https://linkedin.com/signup) 
 
 
-<input type="checkbox"> Have an editor or IDE installed an be familiar with [I recommend Visual Code](https://code.visualstudio.com) 
+<input type="checkbox"> 👉 Have an editor or IDE installed an be familiar with [I recommend Visual Code](https://code.visualstudio.com) 
 
 
 So now that you have everything let's start.
@@ -143,7 +143,7 @@ Now let's get our hands dirty with git. Git is version control system and their 
 
 Log you into your Github account and check if there was a new repository created. 
 You should see something like <githubAccountNme/ogithubOrganizationName>/<repositoryname>
-{{< figure src="1-github.png" caption="Github Dashboard" numbered="true" >}}
+{{< figure src="1-github.jpg" caption="Github Dashboard" numbered="true" >}}
 
 Next you should open an command line tool on your pc.
 
@@ -167,7 +167,7 @@ I recommend you to master the command line it is more convinient and indepentent
 
 
 Into your Github account navigate now into the newly created repository and copy the clone Link of the repository we will need it to create a local copy of the repository on your machine.
-{{< figure src="2-github.png" caption="Overview over your repository" numbered="true" >}}
+{{< figure src="2-github.jpg" caption="Overview over your repository" numbered="true" >}}
 
 Now you go back to your already open console.
 The following command are creating a simple folder structur in your user directory.
@@ -195,6 +195,10 @@ Open now **visual Code** an click on "open Folder"
 
 Next you navigate to your Repository and open it.
 {{< figure src="2-visualCode.png" caption="Choose the root folder of your repository" numbered="true" >}}
+
+
+The you should see a screen like this:
+{{< figure src="3-visualCode.png" caption="Dashboard of visualCode" numbered="true" >}}
 
 
 ## Write your first post
