@@ -18,7 +18,7 @@ share: true # Show social sharing links?
 profile: true # Show author profile?
 commentable: true  # Allow visitors to comment? Supported by the Page, Post, and Docs content types.
 editable: false  # Allow visitors to edit the page? Supported by the Page, Post, and Docs content types.
-type: book
+
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
