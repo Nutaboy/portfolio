@@ -50,7 +50,7 @@ function createCopyButton(codeBracket) {
   }
   
   function addCopyButtonToDom(button, codeBracket) {
-    codeBracket.appendChild(button);
+    codeBracket.insertBefore(button, codeBracket.firstChild);
     const wrapper = document.createElement("div");
     wrapper.className = "highlight-wrapper";
     codeBracket.parentNode.insertBefore(wrapper, codeBracket);
