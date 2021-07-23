@@ -70,7 +70,7 @@ highlight_languages:
   - r
   - bash
 math: false
-diagram: false
+diagram: true
 privacy_pack: false
 edit_page:
   repo_url: ''
