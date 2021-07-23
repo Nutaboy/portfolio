@@ -3,6 +3,7 @@
     width: 100%;
     max-width: 600px;
     padding: 0 20px;
+    color: #f8f9fa;
   }
   
   .skill-name{
@@ -41,8 +42,8 @@
   .skill-per::after{
     content: "";
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 0px;
+    height: 0px;
     background: #08dd36;
     top: -20px;
     right: 0;
