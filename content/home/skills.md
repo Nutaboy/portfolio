@@ -43,7 +43,31 @@ subtitle:
 #  name: "Surfing"
 #  description: "90%"
 ---
-<p>HTML</p>
-<div class="container">
-  <div class="skills html">90%</div>
+<div class="skill">
+  <div class="skill-name">HTML</div>
+  <div class="skill-bar">
+    <div class="skill-per" per="45"></div>
+  </div>
+</div>
+ 
+<div class="skill">
+        <div class="skill-name">CSS</div>
+        <div class="skill-bar">
+            <div class="skill-per" per="70"></div>
+        </div>
+</div>
+ 
+ 
+<div class="skill">
+        <div class="skill-name">Javascript</div>
+        <div class="skill-bar">
+            <div class="skill-per" per="90"></div>
+        </div>
+</div>
+ 
+<div class="skill">
+  <div class="skill-name">Bootstrap</div>
+  <div class="skill-bar">
+    <div class="skill-per" per="65"></div>
+  </div>
 </div>
