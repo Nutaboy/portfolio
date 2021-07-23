@@ -18,8 +18,7 @@ share: true # Show social sharing links?
 profile: true # Show author profile?
 commentable: true  # Allow visitors to comment? Supported by the Page, Post, and Docs content types.
 editable: false  # Allow visitors to edit the page? Supported by the Page, Post, and Docs content types.
-plugins_js: [clipboard]
-diagram: true
+
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
@@ -185,7 +184,7 @@ git clone <Link to your repo>
 graph LR;
   User-->code;
   code-->amanox;
-  amanox-->trainee diary;
+  amanox-->trainee-diary;
 ```
 You can also choose a different structure if it fits your need better it is just a proposal.
 Congrats you finished this part. 🙌
@@ -199,7 +198,7 @@ Next you navigate to your Repository and open it.
 
 
 The you should see a screen like this:
-{{< figure src="3-visualCode.png" caption="Dashboard of visualCode" numbered="true" >}}
+{{< figure src="3-visualCode.jpg" caption="Dashboard of visualCode" numbered="true" >}}
 
 
 ## Write your first post
