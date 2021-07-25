@@ -40,7 +40,7 @@ email: "fabian.brunner@windowslive.com"
 ---
 Fabian Brunner is a Cloud Engineer at Amanox Solutions in Switzerland. His responsibilities are to manage to internal IT of Amanox and to guide his customer to success in the AWS cloud. During this journey he supports the customer with coding and other challenges. He likes to build microservice based solutions and try out new technologies.
 
-In his freetime he like to hike in the Swiss mountains or play football. When he is not on the football pitch or the mountains he like to play some indie computer games. 
+In his freetime he like to hike in the Swiss mountains or play football. When he is not on the football pitch or the mountains he like to play some indie computer games.
 
 
 
