@@ -43,29 +43,29 @@
   
   .skill-bar{
     height: 14px;
-    background: light;
+    background: var(--light);
     border-radius: 3px;
   }
   
   .skill-per{
     height: 14px;
-    background: primary;
+    background: var(--primary);
     border-radius: 3px;
     position: relative;
     animation: fillBars 2.5s 1;
-    box-shadow: 5px 5px 10px #000000;
   }
   
   .skill-per::before{
     content: attr(per);
     position: absolute;
     padding: 4px 6px;
-    background: primary;
+    background: var(--primary);
     border-radius: 4px;
     font-size: 12px;
     top: -35px;
     right: 0;
     transform: translateX(50%);
+    box-shadow: 5px 5px 10px var(--dark);
   }
   
   
