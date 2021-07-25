@@ -79,33 +79,13 @@
   }
 
   //buttom
-  .highlight-wrapper {
-    display: block;
-  }
-  
-  .highlight {
-    position: relative;
-    z-index: 0;
-    padding: 0;
-    margin: 0;
-    border-radius: 4px;
-  }
-  
-  .highlight > .chroma {
-    color: #d0d0d0;
-    background-color: #212121;
-    position: static;
-    z-index: 1;
-    border-radius: 4px;
-    padding: 10px;
-  }
-  
-  .chroma .lntd:first-child {
+ 
+  code .lntd:first-child {
     padding: 7px 7px 7px 10px;
     margin: 0;
   }
   
-  .chroma .lntd:last-child {
+  code .lntd:last-child {
     padding: 7px 10px 7px 7px;
     margin: 0;
   }
