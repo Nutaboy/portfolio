@@ -45,6 +45,7 @@
     height: 14px;
     background: var(--light);
     border-radius: 3px;
+    box-shadow: 5px 5px 10px var(--dark);
   }
   
   .skill-per{
@@ -59,13 +60,12 @@
     content: attr(per);
     position: absolute;
     padding: 4px 6px;
-    background: var(--primary);
+    background: var(--info);
     border-radius: 4px;
     font-size: 12px;
     top: -35px;
     right: 0;
     transform: translateX(50%);
-    box-shadow: 5px 5px 10px var(--dark);
   }
   
   
