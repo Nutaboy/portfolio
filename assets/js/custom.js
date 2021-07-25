@@ -66,6 +66,6 @@ function addCopyButtonToDom(button, codeBlock) {
   wrapper.appendChild(codeBlock);
 }
 
-document.querySelectorAll("pre > code")
+document.querySelectorAll("code")
   .forEach(codeBlock => createCopyButton(codeBlock));
 
