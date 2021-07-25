@@ -45,25 +45,40 @@ subtitle:
 ---
 <div class="skills">
   <div class="skill">
-    <div class="skill-name">HTML</div>
+    <div class="skill-name">AWS</div>
     <div class="skill-bar">
       <div class="skill-per" per="90%" style="max-width:90%"></div>
     </div>
   </div>
 
   <div class="skill">
-    <div class="skill-name">CSS</div>
+    <div class="skill-name">Devops</div>
     <div class="skill-bar">
       <div class="skill-per" per="70%" style="max-width:70%"></div>
     </div>
   </div>
 
   <div class="skill">
-    <div class="skill-name">Javascript</div>
+    <div class="skill-name">Python</div>
     <div class="skill-bar">
       <div class="skill-per" per="60%" style="max-width:60%"></div>
     </div>
   </div>
+
+  <div class="skill">
+    <div class="skill-name">API</div>
+    <div class="skill-bar">
+      <div class="skill-per" per="69%" style="max-width:60%"></div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <div class="skill-name">Nutanix</div>
+    <div class="skill-bar">
+      <div class="skill-per" per="60%" style="max-width:60%"></div>
+    </div>
+  </div>
+
 
 
 </div>

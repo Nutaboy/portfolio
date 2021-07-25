@@ -38,8 +38,10 @@ highlight_name: false
 title: Fabian Brunner
 email: "fabian.brunner@windowslive.com"
 ---
-Fabian Brunner is a Cloud Engineer at Amanox Solutions in Switzerland. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Fabian Brunner is a Cloud Engineer at Amanox Solutions in Switzerland. His responsibilities are to manage to internal IT of Amanox and to guide his customer to success in the AWS cloud. During this journey he supports the customer with coding and other challenges. He likes to build microservice based solutions and try out new technologies.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+In his freetime he like to hike in the Swiss mountains or play football. When he is not on the football pitch or the mountains he like to play some indie computer games. 
+
+
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
