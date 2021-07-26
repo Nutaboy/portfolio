@@ -30,7 +30,7 @@ async function copyCodeToClipboard(button, codeBlock) {
 function copyCodeBlockExecCommand(codeToCopy, codeBlock) {
   const textArea = document.createElement("textArea");
   textArea.contentEditable = 'false'
-  textArea.readOnly = 'false'
+  textArea.readOnly = 'true'
   textArea.className = "copyable-text-area";
   textArea.value = codeToCopy;
   codeBlock.insertBefore(textArea, codeBlock.firstChild);
@@ -62,6 +62,8 @@ function addCopyButtonToDom(button, codeBlock) {
 
 document.querySelectorAll("pre > code:not(.language-mermaid)")
   .forEach(codeBlock => createCopyButton(codeBlock));
+
+
 
 
 
