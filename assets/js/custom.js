@@ -1,11 +1,11 @@
 
 
 //button
-function crateCodeLabel(codeBlock) {
+function createCodeLabel(codeBlock) {
   const label = document.createElement("LABEL");
   label.className = "code-label";
   label.innerText = codeBlock.className.slice(9);
-  addLabelToDom(label, codeBlock)
+  addCodeLabelToDom(label, codeBlock)
 }
 function createCopyButton(codeBlock) {
   const button = document.createElement("button");
@@ -60,7 +60,7 @@ function addCopyButtonToDom(button, codeBlock) {
   wrapper.appendChild(codeBlock);
 }
 
-function addLabelToDom(label, codeBlock) {
+function addCodeLabelToDom(label, codeBlock) {
   codeBlock.parentNode.insertBefore(label, codeBlock);
 }
 
