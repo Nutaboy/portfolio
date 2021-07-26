@@ -11,7 +11,7 @@ function createCopyButton(codeBlock) {
 }
 
 async function copyCodeToClipboard(button, codeBlock) {
-  const codeToCopy = codeBlock.querySelector(":last-child > .chroma > code").innerText;
+  const codeToCopy = codeBlock.querySelector(":last-child").innerText;
   try {
     result = await navigator.permissions.query({ name: "clipboard-write" });
     if (result.state == "granted" || result.state == "prompt") {
