@@ -17,32 +17,24 @@ async function copyCodeToClipboard(button, codeBlock) {
     if (result.state == "granted" || result.state == "prompt") {
       await navigator.clipboard.writeText(codeToCopy);
     } else {
-      copyCodeBlockExecCommand(codeToCopy, codeBlock);
+      copyCodeBlockExecCommand(codeBlock);
     }
   } catch (_) {
-    copyCodeBlockExecCommand(codeToCopy, codeBlock);
+    copyCodeBlockExecCommand(codeBlock);
   }
   finally {
     codeWasCopied(button);
   }
 }
 
-function copyCodeBlockExecCommand(codeToCopy, codeBlock) {
-  const textArea = document.createElement("TEXTAREA");
-  textArea.contentEditable = 'false'
-  textArea.readOnly = 'true'
-  textArea.className = "copyable-text-area";
-  textArea.value = codeToCopy;
-  codeBlock.insertBefore(textArea, codeBlock.firstChild);
+function copyCodeBlockExecCommand(codeBlock) {
   const range = document.createRange()
   range.selectNodeContents(codeBlock)
   const sel = window.getSelection()
   sel.removeAllRanges()
   sel.addRange(range)
-  //textArea.setSelectionRange(0, 999999)
   document.execCommand("copy");
   sel.removeAllRanges()
-  codeBlock.removeChild(textArea);
 }
 
 function codeWasCopied(button) {
@@ -63,3 +55,6 @@ function addCopyButtonToDom(button, codeBlock) {
 
 document.querySelectorAll("pre > code:not(.language-mermaid)")
   .forEach(codeBlock => createCopyButton(codeBlock));
+
+
+
