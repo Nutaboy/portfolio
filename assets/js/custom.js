@@ -28,18 +28,19 @@ async function copyCodeToClipboard(button, codeBlock) {
 }
 
 function copyCodeBlockExecCommand(codeToCopy, codeBlock) {
-  const textArea = document.createElement("textArea");
-  textArea.contentEditable = 'false'
-  textArea.readOnly = 'true'
-  textArea.className = "copyable-text-area";
-  textArea.value = codeToCopy;
-  codeBlock.insertBefore(textArea, codeBlock.firstChild);
+  codeToCopy.select();
+  //const textArea = document.createElement("textArea");
+  //textArea.contentEditable = 'false'
+  //textArea.readOnly = 'true'
+  //textArea.className = "copyable-text-area";
+  //textArea.value = codeToCopy;
+  //codeBlock.insertBefore(textArea, codeBlock.firstChild);
   //const range = document.createRange()
   //range.selectNodeContents(textArea)
   //const sel = window.getSelection()
   //sel.removeAllRanges()
   //sel.addRange(range)
-  textArea.setSelectionRange(0, 999999)
+  //textArea.setSelectionRange(0, 999999)
   document.execCommand("copy");
   codeBlock.removeChild(textArea);
 }
