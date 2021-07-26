@@ -1,10 +1,11 @@
 
 
 //button
-function createCodeLabel(codeBlock) {
+function createCodeLabel(button, codeBlock) {
   const label = document.createElement("LABEL");
   label.className = "code-label";
   label.innerText = codeBlock.className.slice(9);
+  label.appendChild(button)
   addCodeLabelToDom(label, codeBlock)
 }
 function createCopyButton(codeBlock) {
@@ -13,8 +14,8 @@ function createCopyButton(codeBlock) {
   button.type = "button";
   button.innerText = "Copy";
   button.addEventListener("click", () => copyCodeToClipboard(button, codeBlock));
-  createCodeLabel(codeBlock);
-  addCopyButtonToDom(button, codeBlock);
+  createCodeLabel(button, codeBlock);
+  //addCopyButtonToDom(button, codeBlock);
 }
 
 async function copyCodeToClipboard(button, codeBlock) {
