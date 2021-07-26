@@ -5,6 +5,7 @@ function createCodeLabel(codeBlock) {
   const label = document.createElement("LABEL");
   label.className = "code-label";
   label.innerText = codeBlock.className.slice(9);
+  label.setAttribute("for", codeBlock.id)
   addCodeLabelToDom(label, codeBlock)
 }
 function createCopyButton(codeBlock) {
