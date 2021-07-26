@@ -46,11 +46,11 @@ function codeWasCopied(button) {
   button.blur();
   button.innerText = "";
   button.insertAdjacentHTML("afterbegin", '<i class="fas fa-check"></i>');
-  button.focus();
-  button.click();
+  button.className += " active"
   setTimeout(function() {
     button.innerText = "Copy";
     button.insertAdjacentHTML("afterbegin", "<i class='far fa-copy'></i>");
+    button.className = "copy-code-button"
   }, 2000);
 }
 
