@@ -1,6 +1,3 @@
-
-
-//button
 function createCodeLabel(button, codeBlock) {
   const label = document.createElement("LABEL");
   label.className = "code-label";
@@ -15,7 +12,6 @@ function createCopyButton(codeBlock) {
   button.innerText = "Copy";
   button.addEventListener("click", () => copyCodeToClipboard(button, codeBlock));
   createCodeLabel(button, codeBlock);
-  //addCopyButtonToDom(button, codeBlock);
 }
 
 async function copyCodeToClipboard(button, codeBlock) {
@@ -51,15 +47,6 @@ function codeWasCopied(button) {
   setTimeout(function() {
     button.innerText = "Copy";
   }, 2000);
-}
-
-function addCopyButtonToDom(button, codeBlock) {
-  codeBlock.parentNode.insertBefore(button, codeBlock);
-  const wrapper = document.createElement("div");
-  wrapper.className = "highlight-wrapper";
-  codeBlock.parentNode.insertBefore(wrapper, codeBlock);
-  //wrapper.appendChild(button);
-  wrapper.appendChild(codeBlock);
 }
 
 function addCodeLabelToDom(label, codeBlock) {
