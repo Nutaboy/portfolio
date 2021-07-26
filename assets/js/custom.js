@@ -11,7 +11,7 @@ function createCopyButton(codeBlock) {
   button.type = "button";
   button.innerText = "Copy";
   button.addEventListener("click", () => copyCodeToClipboard(button, codeBlock));
-  buttom.insertAdjacentHTML("afterbegin, <i class='far fa-copy'></i>");
+  button.insertAdjacentHTML("afterbegin, <i class='far fa-copy'></i>");
   createCodeHeader(button, codeBlock);
 }
 
