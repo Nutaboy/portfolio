@@ -1,12 +1,19 @@
 
 
 //button
+function crateCodeLabel(codeBlock) {
+  const label = document.createElement("LABEL");
+  label.className = "code-label";
+  label.innerText = codeBlock.className.slice(9);
+  addLabelToDom(label, codeBlock)
+}
 function createCopyButton(codeBlock) {
   const button = document.createElement("button");
   button.className = "copy-code-button";
   button.type = "button";
   button.innerText = "Copy";
   button.addEventListener("click", () => copyCodeToClipboard(button, codeBlock));
+  createCodeLabel(codeBlock);
   addCopyButtonToDom(button, codeBlock);
 }
 
@@ -53,8 +60,10 @@ function addCopyButtonToDom(button, codeBlock) {
   wrapper.appendChild(codeBlock);
 }
 
+function addLabelToDom(label, codeBlock) {
+  codeBlock.parentNode.insertBefore(label, codeBlock);
+}
+
 document.querySelectorAll("pre > code:not(.language-mermaid)")
   .forEach(codeBlock => createCopyButton(codeBlock));
-
-
 
