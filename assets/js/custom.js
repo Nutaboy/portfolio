@@ -60,6 +60,6 @@ function addCopyButtonToDom(button, codeBlock) {
   wrapper.appendChild(codeBlock);
 }
 
-document.querySelectorAll(code[class$="hljs"])
+document.querySelectorAll(code)
   .forEach(codeBlock => createCopyButton(codeBlock));
 
