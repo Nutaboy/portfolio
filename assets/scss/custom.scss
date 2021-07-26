@@ -79,8 +79,13 @@
   }
 
   //buttom
-  .copy-code-button {
+  .highlight-wrapper {
+    display: block;
     position: relative;
+  }
+
+  .copy-code-button {
+    position: absolute;
     z-index: 2;
     right: 0;
     top: 0;
