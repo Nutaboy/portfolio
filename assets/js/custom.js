@@ -62,7 +62,7 @@ function addCopyButtonToDom(button, codeBlock) {
 }
 
 function addCodeLabelToDom(label, codeBlock) {
-  codeBlock.parentNode.insertAdjacentElement("beforebegin", label);
+  codeBlock.parentNode.insertAdjacentElement("afterbegin", label);
 }
 
 document.querySelectorAll("pre > code:not(.language-mermaid)")
