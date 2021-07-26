@@ -1,9 +1,9 @@
-function createCodeLabel(button, codeBlock) {
-  const label = document.createElement("LABEL");
+function createCodeHeader(button, codeBlock) {
+  const label = document.createElement("SPAN");
   label.className = "code-label";
   label.innerText = codeBlock.className.slice(9);
   label.appendChild(button)
-  addCodeLabelToDom(label, codeBlock)
+  addCodeHeaderToDom(label, codeBlock)
 }
 function createCopyButton(codeBlock) {
   const button = document.createElement("button");
@@ -11,7 +11,8 @@ function createCopyButton(codeBlock) {
   button.type = "button";
   button.innerText = "Copy";
   button.addEventListener("click", () => copyCodeToClipboard(button, codeBlock));
-  createCodeLabel(button, codeBlock);
+  buttom.insertAdjacentHTML("afterbegin, <i class='far fa-copy'></i>");
+  createCodeHeader(button, codeBlock);
 }
 
 async function copyCodeToClipboard(button, codeBlock) {
@@ -49,7 +50,7 @@ function codeWasCopied(button) {
   }, 2000);
 }
 
-function addCodeLabelToDom(label, codeBlock) {
+function addCodeHeaderToDom(label, codeBlock) {
   codeBlock.parentNode.insertAdjacentElement("beforebegin", label);
 }
 
