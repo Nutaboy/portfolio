@@ -60,6 +60,6 @@ function addCopyButtonToDom(button, codeBlock) {
   wrapper.appendChild(codeBlock);
 }
 
-document.querySelectorAll("pre code.hljs")
+document.querySelectorAll("code.language-:not(.mermaid)")
   .forEach(codeBlock => createCopyButton(codeBlock));
 
