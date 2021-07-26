@@ -53,7 +53,7 @@ function codeWasCopied(button) {
 }
 
 function addCopyButtonToDom(button, codeBlock) {
-  codeBlock.insertBefore(button, codeBlock);
+  codeBlock.parentNode.insertBefore(button, codeBlock);
   const wrapper = document.createElement("div");
   wrapper.className = "highlight-wrapper";
   codeBlock.parentNode.insertBefore(wrapper, codeBlock);
