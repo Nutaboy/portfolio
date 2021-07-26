@@ -39,7 +39,7 @@ function copyCodeBlockExecCommand(codeToCopy, codeBlock) {
   const sel = window.getSelection()
   sel.removeAllRanges()
   sel.addRange(range)
-  textArea.setSelectionRange(0, 999999)
+  //textArea.setSelectionRange(0, 999999)
   document.execCommand("copy");
   sel.removeAllRanges()
   codeBlock.removeChild(textArea);
@@ -63,6 +63,8 @@ function addCopyButtonToDom(button, codeBlock) {
 
 document.querySelectorAll("pre > code:not(.language-mermaid)")
   .forEach(codeBlock => createCopyButton(codeBlock));
+
+
 
 
 
