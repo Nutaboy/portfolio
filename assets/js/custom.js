@@ -2,7 +2,7 @@
 
 //button
 function createCodeLabel(codeBlock) {
-  const label = document.createElement("p");
+  const label = document.createElement("LABEL");
   label.className = "code-label";
   label.innerText = codeBlock.className.slice(9);
   addCodeLabelToDom(label, codeBlock)
