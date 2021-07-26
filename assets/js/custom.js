@@ -57,12 +57,12 @@ function addCopyButtonToDom(button, codeBlock) {
   const wrapper = document.createElement("div");
   wrapper.className = "highlight-wrapper";
   codeBlock.parentNode.insertBefore(wrapper, codeBlock);
-  wrapper.appendChild(button);
+  //wrapper.appendChild(button);
   wrapper.appendChild(codeBlock);
 }
 
 function addCodeLabelToDom(label, codeBlock) {
-  codeBlock.parentNode.insertAdjacentElement("afterbegin", label);
+  codeBlock.parentNode.insertAdjacentElement("beforebegin", label);
 }
 
 document.querySelectorAll("pre > code:not(.language-mermaid)")
