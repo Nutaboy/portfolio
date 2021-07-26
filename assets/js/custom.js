@@ -35,7 +35,7 @@ function copyCodeBlockExecCommand(codeToCopy, codeBlock) {
   textArea.value = codeToCopy;
   codeBlock.insertBefore(textArea, codeBlock.firstChild);
   const range = document.createRange()
-  range.selectNodeContents(textArea)
+  range.selectNodeContents(codeBlock)
   const sel = window.getSelection()
   sel.removeAllRanges()
   sel.addRange(range)
@@ -63,11 +63,3 @@ function addCopyButtonToDom(button, codeBlock) {
 
 document.querySelectorAll("pre > code:not(.language-mermaid)")
   .forEach(codeBlock => createCopyButton(codeBlock));
-
-
-
-
-
-
-
-
