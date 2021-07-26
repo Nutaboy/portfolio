@@ -44,9 +44,10 @@ function copyCodeBlockExecCommand(codeBlock) {
 
 function codeWasCopied(button) {
   button.blur();
-  button.innerText = "Copied!";
+  button.innerText = '<i class="fas fa-check"></i>';
   setTimeout(function() {
     button.innerText = "Copy";
+    button.insertAdjacentHTML("afterbegin", "<i class='far fa-copy'></i>");
   }, 2000);
 }
 

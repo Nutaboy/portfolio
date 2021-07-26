@@ -88,8 +88,8 @@
     width: 100%;
   }
 
-  pre .code-label {
-    background-color: #7f7f7f;
+  .code-label {
+    background-color: var(--secondary);
     padding: 0px 0px 0px 0px;
     margin-bottom: 0;
     display: inline-block;
@@ -105,26 +105,22 @@
     top: 0;
     font-size: 13px;
     font-weight: 700;
-    line-height: 14px;
-    width: 65px;
+    width: 12.5%;
     color: #232326;
-    background-color: #7f7f7f;
     border: 1.25px solid #232326;
-    border-top-left-radius: 0;
     border-top-right-radius: 4px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 4px;
     white-space: nowrap;
-    padding: 4px 4px 5px 4px;
-    margin: 0 0 0 1px;
     cursor: pointer;
     opacity: 0.6;
   }
   
-  .copy-code-button:hover,
-  .copy-code-button:focus,
   .copy-code-button:active,
-  .copy-code-button:active:hover {
+  .copy-code-button:active:hover{
+    background-color: var(--success);
+  }
+
+  .copy-code-button:hover,
+  .copy-code-button:focus {
     color: #222225;
     background-color: #b3b3b3;
     opacity: 0.8;
