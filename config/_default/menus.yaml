@@ -19,7 +19,7 @@ main:
   - name: Learn
     url: '#test'
     weight: 60
-  - name: Posts
+  - name: Blog
     url: 'posts/'
     parent: "Learn"
     weight: 60
