@@ -46,7 +46,7 @@ function codeWasCopied(button) {
   button.blur();
   button.innerText = "";
   button.insertAdjacentHTML("afterbegin", '<i class="fas fa-check"></i>');
-  button.className += "-active"
+  button.setActive();
   setTimeout(function() {
     button.innerText = "Copy";
     button.insertAdjacentHTML("afterbegin", "<i class='far fa-copy'></i>");
