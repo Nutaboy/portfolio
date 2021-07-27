@@ -96,6 +96,7 @@
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     font-size: .7rem;
+    color: var(--light);
   }
 
   .copy-code-button {
@@ -103,16 +104,17 @@
     z-index: 2;
     right: 0;
     top: 0;
-    font-size: 13px;
+    font-size: .7rem;
     font-weight: 700;
     width: 12.5%;
     height: 100%;
-    color: #232326;
-    border: 1.25px solid #232326;
+    border: 1.25px solid var(--secondary);
     border-top-right-radius: 4px;
     white-space: nowrap;
     cursor: pointer;
     opacity: 0.6;
+    background-color: var(--secondary);
+    color: var(--light)
   }
   .copy-code-button:active,
   .copy-code-button:active:hover{
