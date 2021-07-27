@@ -9,7 +9,7 @@ function createCopyButton(codeBlock) {
   const button = document.createElement("button");
   button.className = "copy-code-button";
   button.type = "button";
-  button.innerText = "Copy";
+  button.innerText = " Copy";
   button.addEventListener("click", () => copyCodeToClipboard(button, codeBlock));
   button.insertAdjacentHTML("afterbegin", "<i class='far fa-copy'></i>");
   createCodeHeader(button, codeBlock);
@@ -48,7 +48,7 @@ function codeWasCopied(button) {
   button.insertAdjacentHTML("afterbegin", '<i class="fas fa-check"></i>');
   button.setActive();
   setTimeout(function() {
-    button.innerText = "Copy";
+    button.innerText = " Copy";
     button.insertAdjacentHTML("afterbegin", "<i class='far fa-copy'></i>");
     button.className = "copy-code-button"
   }, 2000);
