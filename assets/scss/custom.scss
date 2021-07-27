@@ -96,11 +96,6 @@
     margin-bottom: 0;
     }
 
-  span {
-    position: relative;
-    width: 100%;
-  }
-
   .code-label {
     background-color: var(--secondary);
     padding: 5px;
@@ -110,6 +105,8 @@
     border-top-right-radius: 4px;
     font-size: .7rem;
     color: var(--light);
+    position: relative;
+    width: 100%;
   }
 
   .copy-code-button {
