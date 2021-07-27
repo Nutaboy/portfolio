@@ -116,9 +116,11 @@
     color: var(--light)
   }
   .copy-code-button:focus,
+  .copy-code-button:focus:hover,
   .copy-code-button:active,
   .copy-code-button:active:hover{
     background-color: var(--success);
+    outline: none;
   }
 
   .copy-code-button:hover {
