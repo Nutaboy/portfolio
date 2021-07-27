@@ -88,7 +88,7 @@ show_related:
   publication: false
   event: false
 reading_time: true
-section_pager: false
+section_pager: true
 docs_section_pager: true
 sharing: true
 copyright_license:
