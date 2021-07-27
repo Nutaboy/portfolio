@@ -68,14 +68,14 @@ subtitle:
   <div class="skill">
     <div class="skill-name">API</div>
     <div class="skill-bar">
-      <div class="skill-per" per="69%" style="max-width:60%"></div>
+      <div class="skill-per" per="80%" style="max-width:60%"></div>
     </div>
   </div>
 
   <div class="skill">
     <div class="skill-name">Nutanix</div>
     <div class="skill-bar">
-      <div class="skill-per" per="60%" style="max-width:60%"></div>
+      <div class="skill-per" per="50%" style="max-width:60%"></div>
     </div>
   </div>
 
