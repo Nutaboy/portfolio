@@ -20,7 +20,7 @@ main:
     url: '#test'
     weight: 60
   - name: Blog
-    url: 'posts/'
+    url: 'post/'
     parent: "Learn"
     weight: 60
   - name: "Docs"
