@@ -51,7 +51,7 @@ function codeWasCopied(button) {
     button.innerText = " Copy";
     button.insertAdjacentHTML("afterbegin", "<i class='far fa-copy'></i>");
     button.className = "copy-code-button"
-    
+    button.blur();
   }, 2000);
 }
 
