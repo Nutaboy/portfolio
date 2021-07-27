@@ -69,6 +69,12 @@ highlight: true
 highlight_languages:
   - r
   - bash
+  - sh
+  - powershell
+  - markup
+  - html
+  - css
+  - javascript
 math: false
 diagram: true
 privacy_pack: false

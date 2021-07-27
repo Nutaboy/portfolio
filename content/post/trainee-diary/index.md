@@ -78,11 +78,12 @@ Befor you start make sure you fullfill all the requirements to start this guide 
 So now that you have everything let's start.
 
 ## Installation of Chocolatey
+This part is only interesting for windows user.
 Go to your search and tipp in **Windows Powershell** and then open it as an Administrator.
 {{< figure src="1-choco.png" caption="Windows Search" numbered="true" >}}
 
 Then copy paste the following command into powershell.
-```bash
+```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 ```
 Use this to check if everything went fine.
@@ -149,12 +150,12 @@ Next you should open an command line tool on your pc.
 
 
 {{< icon name="apple" pack="fab" >}} On mac open the terminal and type in the following command:
-```bash
+```sh
 homebrew install git golang hugo
 ```
 {{% callout note %}}
 If you should use an mac with the new M1 you need to install go this way.
-```bash
+```sh
 arch -arm64 brew install go       
 ```
 {{% /callout %}}
@@ -199,6 +200,47 @@ Next you navigate to your Repository and open it.
 
 The you should see a screen like this:
 {{< figure src="3-visualCode.jpg" caption="Dashboard of visualCode" numbered="true" >}}
+Now we are ready to edit trainee diary how we want.
+
+### Remove unused parts
+
+The first step that we will do is to get ride of all the stuff that we are not going to use. Here we have to possibilties how we can achieve this.
+1. We can disable the unused parts with the active attribute.
+2. We can delete the unused parts
+I will go with the first option so i navigate into _content/home/_ where you can disable the following files _publications.md_ & _talks.md_ and type in the following code on the second line:
+```markdown
+active: false
+```
+The next step is to also remove the link from the navigation bar. Navigate to from your root foler to _config/_default/menus.yaml_ an in this file you remove the unwanted part. Then your file should look like this.
+```markdown
+main:
+  - name: Home
+    url: '#about'
+    weight: 10
+  - name: Posts
+    url: '#posts'
+    weight: 20
+  - name: Projects
+    url: '#projects'
+    weight: 30
+  - name: Contact
+    url: '#contact'
+    weight: 40
+```
+Befor you now can see some effect of your work you need to save your files and then make a local git commit and push it to the github repository. To do that use the following commands:
+```bash
+git add --all
+git commit -m "My First commit"
+git push
+```
+{{% callout note %}}
+It is always a good idea to give your commit an selfexplaining description so if you would need to go back or someone else wants to understand what you change it is self explaining which saves a lot of time.
+{{% /callout %}}
+After you pushed your changes to the github repository lets login into our github account and check if everything worked out as planned.
+
+
+If you now access your page and scroll throw it you will see the content disappeared.
+{{< figure src="1-delete.jpg" caption="Your website with the removed content" numbered="true" >}}
 
 
 ## Write your first post
