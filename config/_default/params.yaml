@@ -71,8 +71,8 @@ highlight_languages:
   - bash
   - shell
   - powershell
-  - Markdown
-  - HTML
+  - markdown
+  - html
   - css
   - javascript
   - yaml
