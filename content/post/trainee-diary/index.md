@@ -374,19 +374,43 @@ git push
 ```
 {{% /callout %}}
 
-Finally let's take a look at our changes go to your webpage. 
+Finally let's take a look at our changes go to your webpage on _Contact_ and see if something changed.
+If everything worked out you should see now your contact details on the page.
+{{< figure src="2-params.png" caption="The updated contact details" numbered="true" >}}
+Congratulation you also finished this part.🙌
+
+### Add your portrait and biography
+
+### Add your skills
+
+### add your experience
+
+### add your accomplishments
+
+### add an example project
+
 ## Write your first post
 
 ## Made it unique
+Now it is your turn try to spice up your trainee diary and make it really unique so that i respresents a bit of your personality.
+Try to implement one of the following things. I wish you good luck and I am looking forward to see the results of your work.
+- add Languages
+- use a custom theme
+- add a welcome screen
+- add animations
+- add what ever comes to your mind
+
+## Feedback
+<iframe width="640px" height= "480px" src= "https://forms.office.com/Pages/ResponsePage.aspx?id=oxpfyxe2xUuIqoJ628auqDsJu6YOssZLtK_IOsuNRaRUMkZTMDk1OUxSMlpURktDM05YTUFKNDJVTi4u&embed=true" frameborder= "0" marginwidth= "0" marginheight= "0" style= "border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
 
 ## Sources
-[Documentation of wowchemy](https://wowchemy.com/docs/content/docs/)
-[Documentation of Github](https://docs.github.com/en)
-[Documentation of Code Highlighting Liberary](https://highlightjs.org)
-[Documentation of Netlify](https://docs.netlify.com)
-[Mermaid diagrams in markuo](https://mermaid-js.github.io/mermaid/#/)
-[Github Account of Wowchemy](https://github.com/wowchemy)
-[Looking for cool free to use Pictures](https://unsplash.com)
-[Check out your Iconpack](https://fontawesome.com/v5.15/icons?d=gallery&p=1&m=free)
-[Tutorial and Referenz for html, css and js](https://www.w3schools.com)
-[Documentation of Hugo](https://gohugo.io/documentation/)
+- [Documentation of wowchemy](https://wowchemy.com/docs/content/docs/)
+- [Documentation of Github](https://docs.github.com/en)
+- [Documentation of Code Highlighting Liberary](https://highlightjs.org)
+- [Documentation of Netlify](https://docs.netlify.com)
+- [Mermaid diagrams in markuo](https://mermaid-js.github.io/mermaid/#/)
+- [Github Account of Wowchemy](https://github.com/wowchemy)
+- [Looking for cool free to use Pictures](https://unsplash.com)
+- [Check out your Iconpack](https://fontawesome.com/v5.15/icons?d=gallery&p=1&m=free)
+- [Tutorial and Referenz for html, css and js](https://www.w3schools.com)
+- [Documentation of Hugo](https://gohugo.io/documentation/)
