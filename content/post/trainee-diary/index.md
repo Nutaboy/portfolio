@@ -43,7 +43,8 @@ Welcome to the team I wish you a great start and time at our company ❤️
 In this post I will guide you on the setup of your trainee diary. 
 In a later post I will share with you a guide and my expectations.
 If you have any questions or you are stuck at something just get in touch with me.
-Looking forward to work with you.
+Looking forward to work with you and no worry if you don't really understand everything which will be going on in this tutorial.
+If you want to copy or use something of my blog post feel free to do it though attribution is appreciated.✌🏿
 
 {{< toc >}}
 
@@ -202,7 +203,9 @@ Open now **visual Code** an click on "open Folder"
 
 Next you navigate to your Repository and open it.
 {{< figure src="2-visualCode.png" caption="Choose the root folder of your repository" numbered="true" >}}
-
+{{% callout note %}}
+The root directory is the **first or top-most directory in a hierarchy**. It can be likened to the trunk of a tree, as the starting point where all branches originate from.
+{{% /callout %}}
 
 The you should see a screen like this:
 {{< figure src="3-visualCode.jpg" caption="Dashboard of visualCode" numbered="true" >}}
@@ -268,7 +271,122 @@ If you wan't you can check the result as you can see in this image below my demo
 
 You are awesome and finished the first part.🙌
 
-### Edit 
+### Edit the configuration of the webpage
+In this part we are going to fill out your contact details, edit the localization and do some fine tuning.
+So first you open again Visual Code and navigate to _config/default_ and open the _config.yaml_ file.
+{{% callout note %}}
+_.yaml_ means **Yet Another Markup Language** mostly this files are used for configuration were data needs to be stored or transmitted.
+It is also used to store a data structure or object stata which can later be processed. In yaml files the indentation is essential so keep an eye on that.
+{{% /callout %}}
+When you open the file you will see a lot of option in the form of a key value pair. What do i mean with key value pair you might ask yourself.
+Let's look at my example the _key_ title: which has the _value_ Portfolio so basically it it's a normal setting. 
+Now we are going to change some of this _values_ or even add a complet _key/value pair_.
+First thing we are going to change it the title of our site.
+```yaml
+title: Trainee diary
+```
+Next step is to also change the url to actual match your webpage. This is the url you defined in Netlify.
+After that we are finished with this file.
+```yaml
+baseurl: <name>.netlify.app
+```
+Open now the _params.yaml_ file in this files you found everything which is strongly related to the wowchemy theme that we are using.
+As a first step I you should update your contact details here. You should be able now to change that by yourself.
+I still give you my code snippet as an example:
+```markup
+# Contact (edit or remove options as required)
+
+email: fabian.brunner@windowslive.com
+phone: +41 79 266 20 63
+address:
+  street: Dammweg 9
+  city: Bern
+  region: BE
+  postcode: '3013'
+  country: Switzerland
+  country_code: CH
+coordinates:
+  latitude: '46.95639'
+  longitude: '7.44676'
+directions: Enter the Building and take the stairs to the Office on Floor 3
+office_hours:
+  - 'Monday-Friday 09:00 to 17:00'
+appointment_url: 'https://calendly.com/fabian-brunner'
+contact_links:
+  - icon: twitter
+    icon_pack: fab
+    name: DM Me
+    link: 'https://twitter.com/Twitter'
+  - icon: discord
+    icon_pack: fab
+    name: Discord
+    link: 'SwissFabru #4554'
+```
+After we filled out our contact details we are going to customize the localization of your wepage.
+Look for the following key and change their values accordingly.
+```markup
+# Localization
+
+date_format: 'Jan 2, 2006'
+time_format: '15:04 CET'
+address_format: de
+```
+
+Last put not least we are going to change the site feature settings. I summarized everything i changed in this code snippet.
+Search your file with the shortcut on your keyboard, press the keys _ctrl_ + _f_ and type in the key which you are looking for.
+```markup
+highlight_languages:
+  - r
+  - bash
+  - sh
+  - powershell
+  - markup
+  - html
+  - css
+  - javascript
+  - yaml
+diagram: true
+show_related:
+  book: true
+  page: false
+  post: true
+  project: true
+  publication: false
+  event: false
+avatar:
+  gravatar: true
+  shape: circle
+```
+If you ask yourself what are these options all doing let me give you a brief explanation.
+- The **highlight_languages** is were you can define which languages are marked and highlighted according to the language they belong to.
+I used this featured a lot in this post thats all these tiny code sektion that i made for you.
+{{< figure src="1-params.png" caption="Example code section with language bash" numbered="true" >}}
+- With the **diagram** option I enable you to use mermaid diagrams it is kind of a markup language which is generating diagrams.
+- **show_related** defines which kind of recommendations you get in the footer of a post. Because we disabled some of these feature we also disable them in the recommendation.
+- With the **gravatar** option we enable you to use the profile picture of gravatar.
+
+{{% callout warning%}}
+Don't forget to save your changes an then make a commit if you want to see it.
+```bash
+git add --all
+git commit -m "Changed configuration files"
+git push
+```
+{{% /callout %}}
+
+Finally let's take a look at our changes go to your webpage. 
 ## Write your first post
 
 ## Made it unique
+
+## Sources
+[Documentation of wowchemy](https://wowchemy.com/docs/content/docs/)
+[Documentation of Github](https://docs.github.com/en)
+[Documentation of Code Highlighting Liberary](https://highlightjs.org)
+[Documentation of Netlify](https://docs.netlify.com)
+[Mermaid diagrams in markuo](https://mermaid-js.github.io/mermaid/#/)
+[Github Account of Wowchemy](https://github.com/wowchemy)
+[Looking for cool free to use Pictures](https://unsplash.com)
+[Check out your Iconpack](https://fontawesome.com/v5.15/icons?d=gallery&p=1&m=free)
+[Tutorial and Referenz for html, css and js](https://www.w3schools.com)
+[Documentation of Hugo](https://gohugo.io/documentation/)
