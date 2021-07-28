@@ -69,10 +69,10 @@ highlight: true
 highlight_languages:
   - r
   - bash
-  - sh
+  - shell
   - powershell
-  - markup
-  - html
+  - Markdown
+  - HTML
   - css
   - javascript
   - yaml
