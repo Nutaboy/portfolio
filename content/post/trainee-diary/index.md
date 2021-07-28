@@ -360,7 +360,7 @@ avatar:
 If you ask yourself what are these options all doing let me give you a brief explanation.
 - The **highlight_languages** is were you can define which languages are marked and highlighted according to the language they belong to.
 I used this featured a lot in this post thats all these tiny code sektion that i made for you.
-{{< figure src="1-params.png" caption="Example code section with language bash" numbered="true" >}}
+{{< figure src="1-params.jpg" caption="Example code section with language bash" numbered="true" >}}
 - With the **diagram** option I enable you to use mermaid diagrams it is kind of a markup language which is generating diagrams.
 - **show_related** defines which kind of recommendations you get in the footer of a post. Because we disabled some of these feature we also disable them in the recommendation.
 - With the **gravatar** option we enable you to use the profile picture of gravatar.
@@ -376,7 +376,7 @@ git push
 
 Finally let's take a look at our changes go to your webpage on _Contact_ and see if something changed.
 If everything worked out you should see now your contact details on the page.
-{{< figure src="2-params.png" caption="The updated contact details" numbered="true" >}}
+{{< figure src="2-params.jpg" caption="The updated contact details" numbered="true" >}}
 Congratulation you also finished this part.🙌
 
 ### Add your portrait and biography
