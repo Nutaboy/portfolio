@@ -44,7 +44,13 @@ experience:
     location: 'Solothurn'
     date_start: '2016-01-01'
     date_end: '2020-12-31'
-    description: 'Taught electronic engineering and researched semiconductor physics.'
+    description:  |2-
+        Responsibilities include:
+        
+        * Support and Operation of public schools of the city solothurn
+        * network design mainly based on WiFi
+        * training of teachers
+        * leadership of small team
 
   - title: 'System Technician'
     company: 'Datimo'
@@ -62,7 +68,7 @@ experience:
     location: 'Oftringen'
     date_start: '2016-01-01'
     date_end: '2020-12-31'
-    description: 'Taught electronic engineering and researched semiconductor physics.'
+    description: 'Worked with direct touch with customers to sell electronic products'
 
   - title: 'Lieutenant'
     company: 'Swiss Army'
@@ -85,7 +91,7 @@ experience:
     location: 'Solothurn'
     date_start: '2016-01-01'
     date_end: '2020-12-31'
-    description: 'Taught electronic engineering and researched semiconductor physics.'
+    description: 'Learned the basic of IT'
 
 design:
   columns: '2'
