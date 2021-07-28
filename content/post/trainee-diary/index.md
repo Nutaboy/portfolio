@@ -275,7 +275,7 @@ You are awesome and finished the first part.🙌
 In this part we are going to fill out your contact details, edit the localization and do some fine tuning.
 So first you open again Visual Code and navigate to _config/default_ and open the _config.yaml_ file.
 {{% callout note %}}
-_.yaml_ means **Yet Another Markup Language** mostly this files are used for configuration were data needs to be stored or transmitted.
+_.yaml_ means **Yet Another markdown Language** mostly this files are used for configuration were data needs to be stored or transmitted.
 It is also used to store a data structure or object stata which can later be processed. In yaml files the indentation is essential so keep an eye on that.
 {{% /callout %}}
 When you open the file you will see a lot of option in the form of a key value pair. What do i mean with key value pair you might ask yourself.
@@ -293,7 +293,7 @@ baseurl: <name>.netlify.app
 Open now the _params.yaml_ file in this files you found everything which is strongly related to the wowchemy theme that we are using.
 As a first step I you should update your contact details here. You should be able now to change that by yourself.
 I still give you my code snippet as an example:
-```markup
+```markdown
 # Contact (edit or remove options as required)
 
 email: fabian.brunner@windowslive.com
@@ -324,7 +324,7 @@ contact_links:
 ```
 After we filled out our contact details we are going to customize the localization of your wepage.
 Look for the following key and change their values accordingly.
-```markup
+```markdown
 # Localization
 
 date_format: 'Jan 2, 2006'
@@ -334,14 +334,13 @@ address_format: de
 
 Last put not least we are going to change the site feature settings. I summarized everything i changed in this code snippet.
 Search your file with the shortcut on your keyboard, press the keys _ctrl_ + _f_ and type in the key which you are looking for.
-```markup
+```markdown
 highlight_languages:
   - r
   - bash
-  - sh
+  - shell
   - powershell
-  - markup
-  - html
+  - markdown
   - css
   - javascript
   - yaml
@@ -361,7 +360,7 @@ If you ask yourself what are these options all doing let me give you a brief exp
 - The **highlight_languages** is were you can define which languages are marked and highlighted according to the language they belong to.
 I used this featured a lot in this post thats all these tiny code sektion that i made for you.
 {{< figure src="1-params.jpg" caption="Example code section with language bash" numbered="true" >}}
-- With the **diagram** option I enable you to use mermaid diagrams it is kind of a markup language which is generating diagrams.
+- With the **diagram** option I enable you to use mermaid diagrams it is kind of a markdown language which is generating diagrams.
 - **show_related** defines which kind of recommendations you get in the footer of a post. Because we disabled some of these feature we also disable them in the recommendation.
 - With the **gravatar** option we enable you to use the profile picture of gravatar.
 
@@ -380,21 +379,423 @@ If everything worked out you should see now your contact details on the page.
 Congratulation you also finished this part.🙌
 
 ### Add your portrait and biography
+Now we would like to edit the following part of our webpage.
+{{< figure src="1-bio.png" caption="The Profile Part" numbered="true" >}}
+To edit this part we need to navigate to _content/authors/admin_ and open the **_index.md** file.
+If you want to use the gravatar profile picture we need to calc the hash of our mail adress that we used for gravatar.
+You can do it like this:
+```bash
+echo -n fabian.brunner@windowslive.com | md5
+```
+{{< figure src="2-bio.png" caption="The md5 hashed mail adress" numbered="true" >}}
+Then you copy the output and add it to the end of this link _https://www.gravatar.com/avatar/_ with that your webpage will be able to call the gravatar api.
+The rest you can look up in my example markdown file.
+Here you can start to edit everything as needed. I also put in my code as an example:
+```markdown
+---
+role: Cloud Engineer
+avatar_filename: https://www.gravatar.com/avatar/1a32b4e8c526b48a93433a6ff692d809
+bio: My research interests include AWS, IaC and HybridCloud.
+interests:
+  - AWS
+  - IaC
+  - HybridCloud
+social:
+  - icon: envelope
+    icon_pack: fas
+    link: /#contact
+  - icon: twitter
+    icon_pack: fab
+    link: https://twitter.com/nutaboy
+  - icon: github
+    icon_pack: fab
+    link: https://github.com/nutaboy
+  - icon: linkedin
+    icon_pack: fab
+    link: https://www.linkedin.com/in/fabian-brunner-699284133/
+organizations:
+  - name: Amanox Solutions AG
+    url: https://www.amanox.ch
+education:
+  courses:
+    - course: "BSc in Computer Science "
+      institution: Fachhochschule und Nordwestschweiz FHNW
+      year: ""
+    - course: Berufsmatura
+      institution: Gewerblich-Industrielle Berufsfachschule Solothurn
+      year: ""
+    - course: Swiss Federal Certificate of Proficiency
+      institution: Gewerblich-Industrielle Berufsfachschule Solothurn
+      year: ""
+superuser: true
+highlight_name: false
+title: Fabian Brunner
+email: "fabian.brunner@windowslive.com"
+---
+Fabian Brunner is a Cloud Engineer at Amanox Solutions in Switzerland. His responsibilities are to manage to internal IT of Amanox and to guide his customer to success in the AWS cloud. During this journey he supports the customer with coding and other challenges. He likes to build microservice based solutions and try out new technologies.
+
+In his freetime he like to hike in the Swiss mountains or play football. When he is not on the football pitch or the mountains he like to play some indie computer games.
+
+
+
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
+```
+When you edit everything as wished you can then push everything to the Github repository and see if the conent on your webpage changed.
+{{< figure src="3-bio.png" caption="The result of your changes" numbered="true" >}}
+You made to the end of this part congratulation.
 
 ### Add your skills
+So far we mostly worked with so called widgets. These are kind of prebuild modules which we can use. For the skill part this widget doesn't fullfill our needs.
+Because we want kind of cool skill bars which show our skills instead of boring icons.
+Now we could create our own widget or use html code directly for now we will stick with the second option.
+Blank html, thats no problem because we can then use the blank widget which allows us to write direct html code into the .md file.(It is also possible in the prebuild widgets it is just not so clean🤫)
+
+
+The First step is to navigate into the following directory _content/home_ and there you open the file _skills.md_
+Then you will delete the following lines of code.
+```markdown
+# Showcase personal skills or business features.
+- Add/remove as many `feature` blocks below as you like.
+- For available icons, see: https://wowchemy.com/docs/page-builder/#icons
+feature:
+- description: 90%
+  icon: r-project
+  icon_pack: fab
+  name: R
+- description: 100%
+  icon: chart-line
+  icon_pack: fas
+  name: Statistics
+- description: 10%
+  icon: camera-retro
+  icon_pack: fas
+  name: Photography
+
+# Uncomment to use emoji icons.
+#- icon: ":smile:"
+#  icon_pack: "emoji"
+#  name: "Emojiness"
+#  description: "100%"  
+
+# Uncomment to use custom SVG icons.
+# Place custom SVG icon in `assets/images/icon-pack/`, creating folders if necessary.
+# Reference the SVG icon name (without `.svg` extension) in the `icon` field.
+#- icon: "your-custom-icon-name"
+#  icon_pack: "custom"
+#  name: "Surfing"
+#  description: "90%"
+```
+Eventually we change the type of the part that we are editing, that we can achieve if we change _widget:_ from _featurette_ to _blank_.
+Afterwards we can start to work on our html code. But first what is html and what does it stand for. HTML stands for Hypertext Markup Language and is basically the base of the world wide web.
+At the moment we are using version 5 which is compatible with all browsers. Mostly it will be assisted by other technologies like css and javascript. For our skillbar we will need to do some html and css.
+CSS stands for Cascading Style Sheets the main responsibility for css is the presentation of the html parts. So css is like clothes for humans because affect as well our presentation layer.
+When you use html you also need to use css or it will be very ugly. If we want to add custom css we can to that if we create a file with the _.scss_ extention under the following folder _assets/scss_.
+If you search a challenge you can try to build these skillbars yourself with the help of [w3school](https://www.w3schools.com/howto/howto_css_skill_bar.asp) but you have to use only html and css to do it.
+However if you still feel overhelmed than expand the next section and we build it up together.
+{{< spoiler text="Let's build it together" >}}
+The first step that we are going to do is to insert out html code. You can put your html code after the secone **---** in the file. 
+Html always use <>tags we will mostly use the <div></div> tag to do our job. A tag mostly have a start <> tag and a end tag </>.
+Let create our first <div> tag. And put some text between the brackets. 
+{{< /spoiler >}}
+{{< spoiler text="My Solution" >}}
+The skills.md file:
+```markdown
+---
+# An instance of the Featurette widget.
+# Documentation: https://wowchemy.com/docs/page-builder/
+widget: blank
+
+# This file represents a page section.
+headless: true
+
+# Order that this section appears on the page.
+weight: 30
+
+title: Skills
+subtitle:
+---
+<div class="skills">
+
+  <div class="skill">
+    <div class="skill-name">AWS</div>
+    <div class="skill-bar">
+      <div class="skill-per" per="90%" style="max-width:90%"></div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <div class="skill-name">Devops</div>
+    <div class="skill-bar">
+      <div class="skill-per" per="70%" style="max-width:70%"></div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <div class="skill-name">Python</div>
+    <div class="skill-bar">
+      <div class="skill-per" per="60%" style="max-width:60%"></div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <div class="skill-name">API</div>
+    <div class="skill-bar">
+      <div class="skill-per" per="80%" style="max-width:80%"></div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <div class="skill-name">Nutanix</div>
+    <div class="skill-bar">
+      <div class="skill-per" per="50%" style="max-width:50%"></div>
+    </div>
+  </div>
+
+</div>
+```
+The custom.sccs file:
+```css
+ :root{
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #1565c0;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  
+  .skills{
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+  }
+  
+  .skill-name{
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 20px 0;
+  }
+  
+  .skill-bar{
+    height: 14px;
+    background: var(--light);
+    border-radius: 3px;
+    box-shadow: 5px 5px 10px var(--dark);
+  }
+  
+  .skill-per{
+    height: 14px;
+    background: var(--primary);
+    border-radius: 3px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+  }
+  
+  .skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background: var(--dark);
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+    color: var(--light);
+  }
+  
+  .skill-per::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: var(dark);
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+  }
+  
+  
+  @keyframes fillBars{
+    from{
+      width: 0;
+    }
+    to{
+      width: 100%;
+    }
+  }
+```
+{{< /spoiler >}}
 
 ### add your experience
 
+```markdown
+---
+# An instance of the Experience widget.
+# Documentation: https://wowchemy.com/docs/page-builder/
+widget: experience
+
+# This file represents a page section.
+headless: true
+
+# Order that this section appears on the page.
+weight: 40
+
+title: Experience
+subtitle:
+
+# Date format for experience
+#   Refer to https://wowchemy.com/docs/customization/#date-format
+date_format: Jan 2006
+
+# Experiences.
+#   Add/remove as many `experience` items below as you like.
+#   Required fields are `title`, `company`, and `date_start`.
+#   Leave `date_end` empty if it's your current employer.
+#   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
+experience:
+  - title: 'Cloud Engineer / IT-Manager'
+    company: 'Amanox Solutions AG'
+    company_url: 'https://www.amanox.ch'
+    company_logo: org-amanox
+    location: 'Bern'
+    date_start: '2018-06-01'
+    date_end: ''
+    description: |2-
+        Responsibilities include:
+        
+        * Creation of concepts & architecture
+        * technical implementation
+        * trainings of groups
+        * Budget responsibility
+        
+  - title: 'Junior System Engineer'
+    company: 'Regio Energie Solothurn'
+    company_url: 'https://www.regioenergie.ch'
+    company_logo: org-regio
+    location: 'Solothurn'
+    date_start: '2016-01-01'
+    date_end: '2020-12-31'
+    description:  |2-
+        Responsibilities include:
+        
+        * Support and Operation of public schools of the city solothurn
+        * network design mainly based on WiFi
+        * training of teachers
+        * leadership of small team
+```
 ### add your accomplishments
+```markdown
+---
+# An instance of the Accomplishments widget.
+# Documentation: https://wowchemy.com/docs/page-builder/
+widget: accomplishments
 
+# This file represents a page section.
+headless: true
+
+# Order that this section appears on the page.
+weight: 50
+
+# Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
+title: 'Accomplish&shy;ments'
+subtitle:
+
+# Date format
+#   Refer to https://wowchemy.com/docs/customization/#date-format
+date_format: Jan 2006
+
+# Accomplishments.
+#   Add/remove as many `item` blocks below as you like.
+#   `title`, `organization`, and `date_start` are the required parameters.
+#   Leave other parameters empty if not required.
+#   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
+item:
+- certificate_url: https://www.youracclaim.com/badges/9803141f-9ad2-4334-99a6-8ffe2cf1d631/linked_in_profile
+  date_end: ""
+  date_start: "2019-08-25"
+  description: ""
+  organization: Nutanix
+  organization_url: https://www.nutanix.com
+  title: 'Nutanix Certified Systems Engineer: Level 1'
+  url: ""
+- certificate_url: https://www.youracclaim.com/badges/9f2b6590-c170-4e8b-98be-b81991587b13/linked_in_profile
+  date_end: ""
+  date_start: "2019-08-25"
+  description: ""
+  organization: Nutanix
+  organization_url: https://www.nutanix.com
+  title: 'Nutanix Certified Systems Engineer: Level 2'
+  url: ""
+```
 ### add an example project
+```markdown
+---
+title: PiBS
+summary: I accompany students in our company with some other co workers
+tags:
+- PiBS
+date: 27-06-2020
 
+# Optional external URL for project (replaces project detail page).
+external_link: ""
+
+image:
+  caption: Photo by Wade Austin Ellis on Unsplash
+  focal_point: Smart
+
+links:
+- icon: twitter
+  icon_pack: fab
+  name: Follow
+  url: https://twitter.com/fabianbrunner
+url_code: ""
+url_pdf: ""
+url_slides: ""
+url_video: ""
+
+# Slides (optional).
+#   Associate this project with Markdown slides.
+#   Simply enter your slide deck's filename without extension.
+#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
+#   Otherwise, set `slides = ""`.
+---
+
+This project is actual work in progress i will keep you up to date as soon as we started.
+
+```
 ## Write your first post
+```markdown
+
+```
 
 ## Made it unique
 Now it is your turn try to spice up your trainee diary and make it really unique so that i respresents a bit of your personality.
 Try to implement one of the following things. I wish you good luck and I am looking forward to see the results of your work.
-- add Languages
+- add Languages to the Biography widget
 - use a custom theme
 - add a welcome screen
 - add animations
@@ -404,6 +805,7 @@ Try to implement one of the following things. I wish you good luck and I am look
 <iframe width="640px" height= "480px" src= "https://forms.office.com/Pages/ResponsePage.aspx?id=oxpfyxe2xUuIqoJ628auqDsJu6YOssZLtK_IOsuNRaRUMkZTMDk1OUxSMlpURktDM05YTUFKNDJVTi4u&embed=true" frameborder= "0" marginwidth= "0" marginheight= "0" style= "border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
 
 ## Sources
+Here are some sources which i used to create these post maybe you can make use of them too.
 - [Documentation of wowchemy](https://wowchemy.com/docs/content/docs/)
 - [Documentation of Github](https://docs.github.com/en)
 - [Documentation of Code Highlighting Liberary](https://highlightjs.org)
