@@ -15,18 +15,18 @@ main:
     weight: 30
   - name: Contact
     url: '#contact'
-    weight: 60
+    weight: 40
   - name: Learn
     url: '#test'
-    weight: 60
+    weight: 50
   - name: Blog
     url: 'post/'
     parent: "Learn"
-    weight: 60
+    weight: 50
   - name: "Docs"
     url: 'docs/'
     parent: "Learn"
-    weight: 60
+    weight: 50
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.
 #  - name: CV

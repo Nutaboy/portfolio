@@ -181,6 +181,12 @@ mkdir amanox
 cd amanox
 git clone <Link to your repo>
 ```
+{{% callout note %}}
+Passwordbased authentication for Github is deprecated so you need to generate an PAT (Personal Access Token)
+and use it like a password.
+[You can follow this tutorial here](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+Make sure you store it also in Bitwarden or the password tool of your choice.
+{{% /callout %}}
 ```mermaid
 graph LR;
   User-->code;
@@ -237,12 +243,32 @@ git push
 It is always a good idea to give your commit an selfexplaining description so if you would need to go back or someone else wants to understand what you change it is self explaining which saves a lot of time.
 {{% /callout %}}
 After you pushed your changes to the github repository lets login into our github account and check if everything worked out as planned.
-
-
+In the red box you see the description of the last commit of the repository.
+{{< figure src="2-delete.jpg" caption="Your commit which is on  Github" numbered="true" >}}
+After that we can go to netlify to check if our changes go actual published to the world wide web.
+If you didn't broke the syntax everything should be fine if you got an failure check if there is no typo in your files.
+After you push a change you need to wait for 1-2minutes until it is live.
+{{< figure src="3-delete.jpg" caption="Published state on Netlify" numbered="true" >}}
 If you now access your page and scroll throw it you will see the content disappeared.
 {{< figure src="1-delete.jpg" caption="Your website with the removed content" numbered="true" >}}
+The next thing is to delete the demo post which is prebuild in our blog to do that we need to delete the following files you can delete it over the shell with the following command as you can see we can also manipulate the filesystem without the need of a mouse click. 
+{{% callout warning %}}
+Attention if you chose the wrong folder it will delete everything in this folder so be sure to chose the right one.
+Be sure to start in the root directory of your project.
+{{% /callout %}}
+```sh
+rm -r content/post/getting-started
+git add --all
+git commit -m "Removed demo post"
+git push
+```
+If you wan't you can check the result as you can see in this image below my demo post is gone on my diary.
+{{< figure src="4-delete.jpg" caption="My Website with the removed post" numbered="true" >}}
 
 
+You are awesome and finished the first part.🙌
+
+### Edit 
 ## Write your first post
 
 ## Made it unique
