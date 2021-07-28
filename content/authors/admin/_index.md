@@ -46,5 +46,7 @@ In his freetime he like to hike in the Swiss mountains or play football. When he
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
 
-
-## Languages
+<div class="section-subheading">Languages</div>
+{{< icon name="language" pack="fas" >}} German  
+{{< icon name="language" pack="fas" >}} French
+{{< icon name="language" pack="fas" >}} English
