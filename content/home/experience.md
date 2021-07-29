@@ -55,7 +55,7 @@ experience:
   - title: 'System Technician'
     company: 'Datimo'
     company_url: 'https://www.datimo.ch'
-    company_logo: datimo.png
+    company_logo: org-x
     location: 'Brugg'
     date_start: '2016-01-01'
     date_end: '2020-12-31'

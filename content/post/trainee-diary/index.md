@@ -494,8 +494,144 @@ If you search a challenge you can try to build these skillbars yourself with the
 However if you still feel overhelmed than expand the next section and we build it up together.
 {{< spoiler text="Let's build it together" >}}
 The first step that we are going to do is to insert out html code. You can put your html code after the secone **---** in the file. 
-Html always use <>tags we will mostly use the <div></div> tag to do our job. A tag mostly have a start <> tag and a end tag </>.
-Let create our first <div> tag. And put some text between the brackets. 
+Html always use <>tags we will mostly use the <div></div> tag to do our job. An HTML element is defined by a start <> tag, some content, and an end </> tag.
+The HTML element is everything from the start tag to the end tag. There are some HTML elements have no content (like the <br> element). These elements are called empty elements. Empty elements do not have an end tag!
+Let create our first tag and insert some text in it. You can push it an see how you skill part will no look like.
+```html
+ <div>AWS</div>
+```
+{{< figure src="1-skills.png" caption="Your first html tag" numbered="true" >}}
+After that we will add a class to the element so that we can design it with css. Let's add the class skill-name to our div tag.
+```html
+<div class="skill-name">AWS</div>
+```
+If you now check our webpage you will see that nothing changed. We now need to add some css to see some effet for that we navigate to _assets/scss_ and create a file _custom.scss_
+Css is syntax always starts with a so called selector which defines for which elements we want to change a design attribute. In our case we can choose the class with . and then we add the _classname_
+behind that . if we don't use a . we can also select direct html elements. But i am pretty sure that there are other <div> elements in our webpage but we don't want to change them.
+After we selected the right class we can define then inside of the {} different design option take a look at the css reference in [w3school](https://www.w3schools.com/cssref/) if you want to see some examples.
+Copy now the following code into you _custom.scss_ and then save your code and push it to Github
+```css
+ .skill-name{
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 20px 0;
+  }
+```
+if your check now your webpage you will see that the font changed a bit.
+{{< figure src="2-skills.png" caption="Your first html tag with edited css" numbered="true" >}}
+The next thing that you can do is to add some color variable to your css file this will make changes in the future more easy to made.
+I will share with you my variables if you want you can insert them into your css as well an use them with _var(--name)_ or define more of them.
+```css
+  :root{
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #1565c0;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+```
+So that you know the basic concept a bit we will add some more html elemtents to the _skills.md_ file.
+The base structure in my example looks like this. You just need to copy the section between the skills bracket so many times you like then you are fine.
+```hmtl
+<div class="skills">
+
+  <div class="skill">
+    <div class="skill-name">Your First Skill</div>
+    <div class="skill-bar">
+      <div class="skill-per" per="90%" style="max-width:90%"></div>
+    </div>
+  </div>
+
+</div>
+```
+After that we will need to adapt the css as well i don't want to go to much into detail if you are interested you can look it up.
+```css
+ .skills{
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+  }
+  
+  .skill-name{
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 20px 0;
+  }
+  
+  .skill-bar{
+    height: 14px;
+    background: var(--light);
+    border-radius: 3px;
+    box-shadow: 5px 5px 10px var(--dark);
+  }
+  
+  .skill-per{
+    height: 14px;
+    background: var(--primary);
+    border-radius: 3px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+  }
+  
+  .skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background: var(--dark);
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+    color: var(--light);
+  }
+  
+  .skill-per::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: var(dark);
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+  }
+  
+  
+  @keyframes fillBars{
+    from{
+      width: 0;
+    }
+    to{
+      width: 100%;
+    }
+  }
+```
 {{< /spoiler >}}
 {{< spoiler text="My Solution" >}}
 The skills.md file:
@@ -650,8 +786,29 @@ The custom.sccs file:
 ```
 {{< /spoiler >}}
 
+Congratulation you also finished this part now the most difficult parts are down.🙌
 ### add your experience
-
+The next thing will be to add our experience in our CV to do that we will only use the widget function.
+If you want the use the icon as i do in my example you need to save them in the _.svg_ format into the _/assets/media/icons/brands_ folder.
+Or you can edit the widget to accept png as well but this you can do at a later stage. [Link to Solution](https://github.com/wowchemy/wowchemy-hugo-modules/discussions/2382)
+For each expierence station you can add a new section like this under experience and fill out the information.
+```markdown
+  - title: 'Cloud Engineer / IT-Manager'
+    company: 'Amanox Solutions AG'
+    company_url: 'https://www.amanox.ch'
+    company_logo: org-amanox
+    location: 'Bern'
+    date_start: '2018-06-01'
+    date_end: ''
+    description: |2-
+        Responsibilities include:
+        
+        * Creation of concepts & architecture
+        * technical implementation
+        * trainings of groups
+        * Budget responsibility
+```
+{{< spoiler text="My Solution" >}}
 ```markdown
 ---
 # An instance of the Experience widget.
@@ -707,7 +864,18 @@ experience:
         * training of teachers
         * leadership of small team
 ```
+{{< /spoiler >}}
+If pushed your changed you experience part should look something like this then.
+{{< figure src="1-exp.png" caption="Your experience" numbered="true" >}}
+
+Congratulation you made it to the end of this section.
 ### add your accomplishments
+Now you are more or less at the end of setting up your CV. Try to make use of the accomplishments section by yourself.
+Take help of the [Documentation of wowchemy](https://wowchemy.com/docs/content/docs/) or ask your collegue.
+You should be able to do it it is very smiliar to the expierence section or you can take a sneak peak at my solution.
+But you should try to do it without that.
+
+{{< spoiler text="My Solution" >}}
 ```markdown
 ---
 # An instance of the Accomplishments widget.
@@ -751,7 +919,50 @@ item:
   title: 'Nutanix Certified Systems Engineer: Level 2'
   url: ""
 ```
+{{< /spoiler >}}
+Congratulation you CV is up to date and ready to be seen by the world.🥳
 ### add an example project
+You can also add project to your side. Mostly this is meant for school project so everyone can take a look on what are working.
+Sometimes you will also have the possibility to show case a project which you did internal at our company.
+The best thing then is to create a short page and give a short overview over what you did. The system is basically the same as a blogpost.
+You can use the hugo cmd line toool to create a new project but this time we will do it manual. First we will create a new folder under _content/project/myFirstProject_.
+Then inside this folder we will create a file named _index.md_ . then we search a picture on [Unsplash](https://unsplash.com) and save it with the name featured.jpg under the same folder.
+After that we can start to copy in the header of the markdown file:
+```markdown
+---
+title: My First Project
+summary: Demo Side
+tags:
+- PiBS
+date: 27-06-2020
+
+# Optional external URL for project (replaces project detail page).
+external_link: ""
+
+image:
+  caption: Photo by Wade Austin Ellis on Unsplash
+  focal_point: Smart
+
+links:
+- icon: twitter
+  icon_pack: fab
+  name: Follow
+  url: https://twitter.com/fabianbrunner
+url_code: ""
+url_pdf: ""
+url_slides: ""
+url_video: ""
+
+# Slides (optional).
+#   Associate this project with Markdown slides.
+#   Simply enter your slide deck's filename without extension.
+#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
+#   Otherwise, set `slides = ""`.
+---
+```
+Then after that we can start to create our blog in regards to the markdown language take a look at some cheat sheets to help you getting started.
+an try to write some little text about a project you made in the past it must not be related to IT.
+After that don't forget to push your stuff. Wish you happy bloging.
 ```markdown
 ---
 title: PiBS
@@ -788,9 +999,20 @@ This project is actual work in progress i will keep you up to date as soon as we
 
 ```
 ## Write your first post
-```markdown
-
+At the end of each week you have to write a blog about what you learned and what happen to you during this week.
+After the setup you should feel already comftable with the basics of your trainee diary.
+You can use the command line to already give you kind of a base structure to do that you can use build in commandline in visual code and type in the following command:
+```powershell
+hugo new --kind post post/myFirstBlog
 ```
+Then you can edit your post with markdown language are you already know from the project page or you can just create everything manual when you copy the files from an existing one.
+If you should need help you can reach out to me. 
+Don't forget the following point for your post:
+- must be in English
+- should reflect something of your work
+- should summarize the learnt things
+
+PS: I know it is kind of a very technical solutionfor a trainee diary but the goal is to makeyou conftable with stuff like this.😉
 
 ## Made it unique
 Now it is your turn try to spice up your trainee diary and make it really unique so that i respresents a bit of your personality.
