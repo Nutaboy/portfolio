@@ -963,6 +963,7 @@ url_video: ""
 Then after that we can start to create our blog in regards to the markdown language take a look at some cheat sheets to help you getting started.
 an try to write some little text about a project you made in the past it must not be related to IT.
 After that don't forget to push your stuff. Wish you happy bloging.
+{{< spoiler  text="My Solution" >}}
 ```markdown
 ---
 title: PiBS
@@ -998,6 +999,7 @@ url_video: ""
 This project is actual work in progress i will keep you up to date as soon as we started.
 
 ```
+{{< /spoiler >}}
 ## Write your first post
 At the end of each week you have to write a blog about what you learned and what happen to you during this week.
 After the setup you should feel already comftable with the basics of your trainee diary.
