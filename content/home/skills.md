@@ -43,4 +43,4 @@ subtitle:
 #  name: "Surfing"
 #  description: "90%"
 ---
-<div>AWS</div>
+<div class="skill-name">AWS</div>
