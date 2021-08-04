@@ -502,14 +502,17 @@ Let create our first tag and insert some text in it. You can push it an see how 
 ```
 {{< figure src="1-skills.png" caption="Your first html tag" numbered="true" >}}
 After that we will add a class to the element so that we can design it with css. Let's add the class skill-name to our div tag.
+
 ```html
 <div class="skill-name">AWS</div>
 ```
+
 If you now check our webpage you will see that nothing changed. We now need to add some css to see some effet for that we navigate to _assets/scss_ and create a file _custom.scss_
 Css is syntax always starts with a so called selector which defines for which elements we want to change a design attribute. In our case we can choose the class with . and then we add the _classname_
 behind that . if we don't use a . we can also select direct html elements. But i am pretty sure that there are other <div> elements in our webpage but we don't want to change them.
 After we selected the right class we can define then inside of the {} different design option take a look at the css reference in [w3school](https://www.w3schools.com/cssref/) if you want to see some examples.
 Copy now the following code into you _custom.scss_ and then save your code and push it to Github
+
 ```css
  .skill-name{
     font-size: 18px;
@@ -518,10 +521,12 @@ Copy now the following code into you _custom.scss_ and then save your code and p
     margin: 20px 0;
   }
 ```
+
 if your check now your webpage you will see that the font changed a bit.
 {{< figure src="2-skills.png" caption="Your first html tag with edited css" numbered="true" >}}
 The next thing that you can do is to add some color variable to your css file this will make changes in the future more easy to made.
 I will share with you my variables if you want you can insert them into your css as well an use them with _var(--name)_ or define more of them.
+
 ```css
   :root{
     --blue: #007bff;
@@ -553,9 +558,11 @@ I will share with you my variables if you want you can insert them into your css
     --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 ```
+
 So that you know the basic concept a bit we will add some more html elemtents to the _skills.md_ file.
 The base structure in my example looks like this. You just need to copy the section between the skills bracket so many times you like then you are fine.
-```hmtl
+
+```html
 <div class="skills">
 
   <div class="skill">
@@ -567,7 +574,9 @@ The base structure in my example looks like this. You just need to copy the sect
 
 </div>
 ```
+
 After that we will need to adapt the css as well i don't want to go to much into detail if you are interested you can look it up.
+
 ```css
  .skills{
     width: 100%;
@@ -632,6 +641,7 @@ After that we will need to adapt the css as well i don't want to go to much into
     }
   }
 ```
+
 {{< /spoiler >}}
 {{< spoiler text="My Solution" >}}
 The skills.md file:
@@ -927,6 +937,7 @@ Sometimes you will also have the possibility to show case a project which you di
 The best thing then is to create a short page and give a short overview over what you did. The system is basically the same as a blogpost.
 You can use the hugo cmd line toool to create a new project but this time we will do it manual. First we will create a new folder under _content/project/myFirstProject_.
 Then inside this folder we will create a file named _index.md_ . then we search a picture on [Unsplash](https://unsplash.com) and save it with the name featured.jpg under the same folder.
+{{< figure src="1-project.png" caption="Structure of a project" numbered="true" >}}
 After that we can start to copy in the header of the markdown file:
 ```markdown
 ---
@@ -1014,7 +1025,7 @@ Don't forget the following point for your post:
 - should reflect something of your work
 - should summarize the learnt things
 
-PS: I know it is kind of a very technical solutionfor a trainee diary but the goal is to makeyou conftable with stuff like this.😉
+PS: I know it is kind of a very technical solutionfor a trainee diary but the goal is to make  you conftable with stuff like this.😉
 
 ## Made it unique
 Now it is your turn try to spice up your trainee diary and make it really unique so that i respresents a bit of your personality.
