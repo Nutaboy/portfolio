@@ -17,17 +17,11 @@ DNS provides a name to number (IP address) mapping or translation, allowing inte
 In this tutorial we will cover the basics of DNS starting with why it was developed, what problems it was designed to solve.
 
 ### Understanding Why we Need it
-All devices (computers etc) that are connected to the Internet, your own network, or company network are identified by an IP address; which is a number.
+The DNS or Domain Name System is a globally distributed directory that ‘resolves’ domain names into IP addresses. Just like a phone directory matches human names with phone numbers, the DNS links domain names to IP addresses of websites. 
 
-IP addresses are easy for computers to process but they are not so easy for people to remember.
+In a nutshell, the DNS locates the IP address of a domain name in order to display the website to the user requesting it. This process happens over a series of electronic queries and responses which help retrieve the website. 
 
-To make it easy for people to remember names (host names) are used to identify individual computers on a network.
-
-On early computer networks a simple text file called a hosts file was created that mapped host names to IP addresses.
-
-This enabled people to refer to other computers by the name, and their computer translated that name to an IP address when it needed to communicate with it.
-
-Here is the host file taken from my PC. It comes with all Windows machines
+The DNS is also a scalable database, which grows as new websites and domain names are added to the internet on a daily basis. It’s reliable and dynamic, and is absolutely integral to the smooth functioning of the internet!
 
 ### Host file on Windows PC
 
@@ -74,33 +68,12 @@ To access a DNS server you will need the IP address of the DNS server.
 
 This is usually supplied to you by your ISP (Internet Service Provider).
 
-Most client computers/devices will be configured to obtain an IP and a DNS server address automatically. (see below)
+Most client computers/devices will be configured to obtain an IP and a DNS server address automatically over DHCP.
 
 ### DNS Services- Open DNS and Google DNS
 Most Home users will use the DNS severs provided by their ISP via their home router.
 
-However you can use alternative DNS servers like OpenDNS and Google Public DNS.
-
-This does mean that you will need to manually add these server addresses to your DNS settings.
-
-### Why Use Alternative DNS Services?
-The standard DNS server doesn’t provide any form of protection from malicious sites.
-
-Because DNS is the gateway to the Internet there are many companies that provide security related services based on the public DNS service.
-
-They do this by filtering DNS requests. Most will detect phishing and spam sites, and many will provide protection from adult related sites.
-
-Most security internet product suites will use some form of filtered DNS.
-
-Open DNS was one of the first companies to do this and they offer family protection for free.
-
-DNS server addresses are: 208.67.222.222 and 208.67.220.220
-
-Google also provide a public DNS service. This doesn’t provide filtering, but may provide a faster DNS service than your ISP.
-
-If your ISP blocks access to an address for some reason using an alternative DNS server like Google Public DNS may avoid the ISP blocks.
-
-IP addresses are : 8.8.8.8 and 8.8.4.4
+However you can use alternative DNS servers like OpenDNS and Google Public DNS. Recently it good quite fames to filter soe request already on the DNS Server of the ISP thats you can also use the one from other providers.
 
 # Basic DNS Concepts
 There are many terms that you will see when reading about DNS.
