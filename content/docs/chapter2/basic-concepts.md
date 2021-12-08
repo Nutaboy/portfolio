@@ -8,7 +8,9 @@ weight: 1
 
 # Network Basics
 
-Mandatory video: https://www.youtube.com/watch?v=3uhA8bdz8gI
+Mandatory video:
+
+<iframe width="769" height="527" src="https://www.youtube.com/embed/3uhA8bdz8gI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 The general differentiation between networks happens in an area sense of way.
 
