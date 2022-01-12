@@ -59,8 +59,10 @@ It's basically the layer 2 equivalent to the IP-address. A mac address looks lik
 
 Question: How many different MAC-addresses exist with 48bit?
 
+<details>
+  <summary>Answer</summary>
 Answer: 2^48 -> 281’474’976’710’656
-
+</details>
 MAC-addresses are usually unique. The first half is vendor specific and doesn't change, so it's possbile to identify the vendor by this address. Adresses gets reused if the vendor passes FF:FF:FF, the next device starts at 00:00:00 again. They are used to address the devices in layer 2 fashion so if multiple devices with the same MAC exist in the same L2 network, only one will receive the frame (see ARP for more information on why). 
 
 A switch operates on this layer and has an ARP-table, where it saves the port and the corresponding MAC-address of the device thats connected via that port. When a switch receives a packet, it only needs to check the L2 data (frame) to know where it has to send the packet next. 
@@ -97,8 +99,10 @@ A network consisting only of a switch an 2 hosts is theoretically enough to func
 
 Question: Whats the range of Link-Local-Addresses in IPv6?
 
+<details>
+  <summary>Answer</summary>
 Answer: 
-
+</details>
 
 ## TCP/IP Layer 3 (ISO/OSI Layer 4)
 This is the transport layer where the transportation protocol is used, most of the time either TCP or UDP. 
