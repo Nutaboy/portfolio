@@ -83,8 +83,9 @@ expaneded IPv6: 0000:0000:0000:0000:0000:FFFF:C0A8:0001
 
 Question: How many unique IPv4 addresses exist?
 
+<details>
 Answer: 2^32 -> 4’294’967’296
-
+</details>
 Question: How many unique IPv6 addresses exist?
 
 Answer: 2^128 -> 3.4028236692093846346337460743177 * 10^38
