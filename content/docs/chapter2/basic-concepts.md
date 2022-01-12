@@ -25,8 +25,6 @@ Wide area network, network over large distances.
 #### GAN:
 Global area network. The terms WAN and GAN are normally used interchangably, because the line between the differentiations blurres. WAN is usually the internet (see also windows adapter setting "connect to WAN").
 
- <img src="./pictures/XAN.png" alt="image of different area networks"> 
-
 ![image of different area networks](./pictures/XAN.png "Different areas of networks")
 
 ### Latency
@@ -53,6 +51,9 @@ Each layer adds data for one or more components to ensure the packet reaches its
 
 ## TCP/IP Layer 1 (ISO/OSI Layer 1&2)
 Packets will be encapsulated with additional information and are considered frames.
+
+![Encapsulation](./pictures/encapsulation.jpg "Encapsulation")
+
 ### MAC-Address
 MAC stands for **M**edia **A**ccess **C**ontrol and is also called a hardware-address.
 It's basically the layer 2 equivalent to the IP-address. A mac address looks like this: 00:50:56:b8:6b:26. Its written in hexadecimal (0-F) and consists of 48-bits (4bits*12).
@@ -71,7 +72,7 @@ Sidenote: There are also Layer-3-Switches, which can read IP-addresses and route
 
 Task: Check the MAC-Address for the device you're currently using.
 
-Question: Which devices that communicate with the TCP/IP reference model use MAC-Addresse?
+Question: Which devices that communicate with the TCP/IP reference model use MAC-Addresses?
 
 
 ## TCP/IP Layer 2 (ISO/OSI Layer 3)
