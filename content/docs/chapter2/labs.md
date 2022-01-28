@@ -115,3 +115,66 @@ tbd (Whats left)
 
 
 
+Big lab:
+
+Create a network plan with the following criteria:
+
+    - 4 networks
+        * Office network
+            § Employee subnet
+            § Printer subnet
+            § IT subnet
+        * Production (special secured network)
+        * DMZ
+        * Internal servers
+    - Each network should have 1'000 usable addresses
+    - subnets are /24
+    - Router or firewall to connect the networks
+    - Trafficrestrictions (with usage of a firewall)
+        * IT -> Production: ssh, rdp
+        * Office -> DMZ: https, DNS
+        * Office -> Production: Drop all
+        * Production <-> DMZ: Drop all
+        * Production & Office <-> internal servers: https, DNS, DHCP
+        * IT -> Internal server: Allow any
+        * Production -> Internet: Drop any
+    - Servers:
+        * DNS
+        * DHCP
+        * Webserver
+        * Mailserver
+    - DHCP configuration according to your created networks
+    - Internal websites:
+        * Pibs.crop.biz
+        * Intranet.corp.biz
+        * ...
+    - External websites:
+        * Pibs.amanox.ch
+
+Create the networkconfiguration in the Cisco packet tracer.
+
+Check the configuration.
+
+Do clients get an IP-adr. from the DHCP pool?
+
+Can clients open internal and external websites?
+
+Does the DNS- Nameresolution work?
+
+(Out of scope: Do the Firewall rules filter traffic?)
+
+
+Additional tasks:
+
+1. Make clients go to an internal website when they request google.com
+2. ..
+3. ..
+
+
+
+Not relevant for this lab, but:
+
+Where are the weaknesses and threats in this configuration?
+
+How can you minimize/eliminate them?
+	
