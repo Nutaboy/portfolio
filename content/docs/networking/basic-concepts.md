@@ -25,8 +25,6 @@ Wide area network, network over large distances.
 #### GAN:
 Global area network. The terms WAN and GAN are normally used interchangably, because the line between the differentiations blurres. WAN is usually the internet (see also windows adapter setting "connect to WAN").
 
- <img src="./pictures/XAN.png" alt="image of different area networks"> 
-
 ![image of different area networks](./pictures/XAN.png "Different areas of networks")
 
 ### Latency
@@ -53,14 +51,19 @@ Each layer adds data for one or more components to ensure the packet reaches its
 
 ## TCP/IP Layer 1 (ISO/OSI Layer 1&2)
 Packets will be encapsulated with additional information and are considered frames.
+
+![Encapsulation](./pictures/encapsulation.jpg "Encapsulation")
+
 ### MAC-Address
 MAC stands for **M**edia **A**ccess **C**ontrol and is also called a hardware-address.
 It's basically the layer 2 equivalent to the IP-address. A mac address looks like this: 00:50:56:b8:6b:26. Its written in hexadecimal (0-F) and consists of 48-bits (4bits*12).
 
 Question: How many different MAC-addresses exist with 48bit?
 
+<details>
+  <summary>Answer</summary>
 Answer: 2^48 -> 281’474’976’710’656
-
+</details>
 MAC-addresses are usually unique. The first half is vendor specific and doesn't change, so it's possbile to identify the vendor by this address. Adresses gets reused if the vendor passes FF:FF:FF, the next device starts at 00:00:00 again. They are used to address the devices in layer 2 fashion so if multiple devices with the same MAC exist in the same L2 network, only one will receive the frame (see ARP for more information on why). 
 
 A switch operates on this layer and has an ARP-table, where it saves the port and the corresponding MAC-address of the device thats connected via that port. When a switch receives a packet, it only needs to check the L2 data (frame) to know where it has to send the packet next. 
@@ -69,7 +72,7 @@ Sidenote: There are also Layer-3-Switches, which can read IP-addresses and route
 
 Task: Check the MAC-Address for the device you're currently using.
 
-Question: Which devices that communicate with the TCP/IP reference model use MAC-Addresse?
+Question: Which devices that communicate with the TCP/IP reference model use MAC-Addresses?
 
 
 ## TCP/IP Layer 2 (ISO/OSI Layer 3)
@@ -83,8 +86,10 @@ expaneded IPv6: 0000:0000:0000:0000:0000:FFFF:C0A8:0001
 
 Question: How many unique IPv4 addresses exist?
 
-Answer: 2^32 -> 4’294’967’296
-
+<details>
+  <summary>Answer</summary>
+  Answer: 2^32 -> 4’294’967’296
+</details>
 Question: How many unique IPv6 addresses exist?
 
 Answer: 2^128 -> 3.4028236692093846346337460743177 * 10^38
@@ -95,8 +100,10 @@ A network consisting only of a switch an 2 hosts is theoretically enough to func
 
 Question: Whats the range of Link-Local-Addresses in IPv6?
 
+<details>
+  <summary>Answer</summary>
 Answer: 
-
+</details>
 
 ## TCP/IP Layer 3 (ISO/OSI Layer 4)
 This is the transport layer where the transportation protocol is used, most of the time either TCP or UDP. 
