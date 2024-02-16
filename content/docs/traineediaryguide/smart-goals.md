@@ -34,14 +34,14 @@ Example: Instead of a generic goal, make it relevant with "Improve business writ
 Set a specific timeframe for achieving the goal. This adds urgency and helps prevent procrastination.
 Example: Instead of an open-ended goal, set a timeframe with "Achieve a 10% increase in daily word count within the next month."
 
-When you combine at least 4 of these elements, it will help you to have an more structured approach to your goals and how you verify them. 
+When you combine at least 4 of these elements, it will help you to have a more structured approach to your goals and how you verify them. 
 
 ## Benefits of SMART
-Overall, the use of SMART goals contributes to a more structured, focused, and successful approach to goal-setting and achievement. Whether applied in personal development, education, or business contexts, this framework provides a practical guide for turning aspirations into concrete, attainable outcomes.
+Overall, the use of SMART goals contributes to a more structured, focused, and successful approach to goal setting and achievement. Whether applied in personal development, education, or business contexts, this framework provides a practical guide for turning aspirations into concrete, attainable outcomes.
 
 * SMART provides clear and specific objectives, eliminating ambiguity. This clarity helps individuals understand exactly what is expected and how success will be measured.
 
-* The inclusion of measurable criteria allows for tracking progress objectively. This helps individuals monitor their advancement, stay motivated, and make adjustments if necessary.
+* The inclusion of measurable criteria allows for tracking progress objectively. This helps individuals monitor their advancement, stay motivated, and adjust if necessary.
 
 * The "Achievable" component encourages individuals to set goals that are realistic and attainable. This helps prevent frustration and maintains motivation by ensuring that objectives are within reach.
 

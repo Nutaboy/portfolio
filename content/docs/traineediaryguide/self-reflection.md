@@ -8,10 +8,10 @@ weight: 1
 ---
 
 ## What is self-reflection
-Self-reflection desribes the process of examining and contemplating one's thoughts, actions and emotions. With the right conclusions one gain a deeper understanding of oneself, one's values, beliefs, strengths, weaknesses, and motivations. The new recognition enhance self-awareness and personal development. We beliefe that this is an important aspect in every professional aspect of our life. 
+Self-reflection describes the process of examining and contemplating one's thoughts, actions and emotions. With the right conclusions one gain a deeper understanding of oneself, one's values, beliefs, strengths, weaknesses, and motivations. The new recognition enhances self-awareness and personal development. We believe that this is an important aspect in every professional aspect of our life. 
 
 ## Benefits of self-reflection
-Of course there are multiple benefits of self-reflection we list here the most important ones for us.
+Of course, there are multiple benefits of self-reflection we list here the most important ones for us.
 
 * Understanding your thoughts, emotions, and behaviors leads to increased self-awareness. This awareness allows you to make more informed decisions and respond thoughtfully to various situations.
 
@@ -36,11 +36,11 @@ Here we provide you a list with some example questions you can ask yourself in s
 
 * What did I learn?
 * Did I get closer to my goal?
-* How I felt during the situation?
-* How i helped others?
+* How did I feel during the situation?
+* How did I help others?
 * What did I do for myself? 
-* What was for me personal important during this week?
+* What was for me personally important during this week?
 * How did I behave during the situation?
-* How does it it influence my future actions?
+* How does it influence my future actions?
 
 
