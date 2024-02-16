@@ -1,6 +1,6 @@
 ---
 # Title, summary, and page position.
-linktitle: trainee diary guide
+linktitle: Trainee diary guide
 summary: Some useful information about the PIBS 
 weight: 1
 icon: book
