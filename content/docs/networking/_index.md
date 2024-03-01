@@ -13,7 +13,7 @@ type: book  # Do not modify.
 ---
 
 ## 🎯 Goals
-When you work through this course you should be able to 
+When you work through this course you should be able to:
 
 <input type="checkbox"> Understand the OSI model
 
@@ -21,8 +21,8 @@ When you work through this course you should be able to
 
 <input type="checkbox"> Understand DNS
 
-<input type="checkbox"> Hand some fun
+<input type="checkbox"> Have some fun
 
 <input type="checkbox"> Give feedback to improve the course
 
-I hope you will enjoy the material and learn some cool new stuff. It is still work in progress so if there should be something not understandable don't hesitate to contact me. So i wish you happy learning.
+I hope you will enjoy the material and learn some cool new stuff. It is still a work in progress, so, if there is any question, don't hesitate to contact me. So I wish you happy learning.
