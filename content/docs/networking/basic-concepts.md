@@ -25,7 +25,7 @@ Wide area network, network over large distances.
 #### GAN:
 Global area network. The terms WAN and GAN are normally used interchangably, because the line between the differentiations blurres. WAN is usually the internet (see also windows adapter setting "connect to WAN").
 
-![image of different area networks](./pictures/XAN.png "Different areas of networks")
+![image of different area networks](/pictures/XAN.png "Different areas of networks")
 
 ### Latency
 Latency is the time measured between packets sent and received. If it takes 80ms for a packet to arrive at its destination, the latency is 160ms (forth and back).
